@@ -14,7 +14,7 @@ import { NuxtLink } from '../.nuxt/components';
       >Cargando…</iframe
     >
     <img
-      src="~assets/img/autocred.png"
+      src="~/assets/img/autocred.png"
       alt="Logo Autocred"
       class="justify-self-center"
     />
