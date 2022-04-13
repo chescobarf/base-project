@@ -13,7 +13,11 @@ import { NuxtLink } from '../.nuxt/components';
       marginwidth="0"
       >Cargando…</iframe
     >
-    <img src="/assets/img/autocred.png" alt="" class="justify-self-center" />
+    <img
+      src="~assets/img/autocred.png"
+      alt="Logo Autocred"
+      class="justify-self-center"
+    />
   </div>
 </template>
 
