@@ -10,7 +10,7 @@ import { NuxtLink } from '../.nuxt/components';
     />
     <iframe
       src="https://docs.google.com/forms/d/e/1FAIpQLSfewHTPdXUbussxATteTXvwTuNJDGn6Rhl0F0itasMIVtf-tA/viewform?embedded=true"
-      width="640"
+      width="100%"
       height="1500"
       frameborder="0"
       marginheight="0"
