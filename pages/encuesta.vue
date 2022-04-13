@@ -3,27 +3,66 @@ import { NuxtLink } from '../.nuxt/components';
   <div
     class="grid place-content-center bg-gradient-to-r from-primary-900 to-secondary-900"
   >
-    <img
-      src="~/assets/img/autocred.png"
-      alt="Logo Autocred"
-      class="justify-self-center"
-    />
-    <iframe
-      src="https://docs.google.com/forms/d/e/1FAIpQLSfewHTPdXUbussxATteTXvwTuNJDGn6Rhl0F0itasMIVtf-tA/viewform?embedded=true"
-      width="100%"
-      height="1500"
-      frameborder="0"
-      marginheight="0"
-      marginwidth="0"
-      >Cargando…</iframe
-    >
+    <div id="ff-compose"></div>
   </div>
+
+  <component
+    :is="'script'"
+    async
+    defer
+    :src="'https://formfacade.com/include/117600640385758363887/form/1FAIpQLSfewHTPdXUbussxATteTXvwTuNJDGn6Rhl0F0itasMIVtf-tA/classic.js?div=ff-compose'"
+  >
+  </component>
 </template>
-
-<script setup></script>
-
-<style scoped>
+<script>
+export default {
+  methods: {
+    keelItWithFire() {
+      document.querySelector("#ff-submit-root").innerHTML = "Lecciones";
+      document.getElementById("ff-submit-root").innerHTML = "Hello World!!";
+    },
+  },
+  beforeUnmount() {
+    keelItWithFire();
+  },
+};
+</script>
+<style>
 img {
   width: 90%;
+}
+
+.ff-form .ff-submit {
+  visibility: hidden;
+  position: relative;
+}
+
+.ff-form .ff-submit::after {
+  background-color: #5d33fb;
+  content: "Enviar";
+  display: block;
+  position: absolute;
+  top: 2px;
+  visibility: visible;
+  padding-left: 35px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 6px;
+}
+.ff-form .ff-submit img {
+  visibility: visible;
+  position: absolute;
+  z-index: 9;
+  top: 10px;
+  left: 25px;
+}
+
+.ff-button-bar img {
+  display: none;
+}
+
+.ff-partial {
+  display: none !important;
 }
 </style>
