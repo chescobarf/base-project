@@ -23,7 +23,7 @@ import { NuxtLink } from '../.nuxt/components';
 <script setup></script>
 
 <style scoped>
-image {
+img {
   width: 90%;
 }
 </style>
