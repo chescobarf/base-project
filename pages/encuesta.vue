@@ -1,7 +1,8 @@
 import { NuxtLink } from '../.nuxt/components';
 <template>
   <div
-    class="grid place-content-center bg-gradient-to-r from-primary-900 to-secondary-900 h-auto sm:h-screen"
+    id="container"
+    class="grid place-content-center bg-gradient-to-r from-primary-900 to-secondary-900 h-auto"
   >
     <div id="ff-compose"></div>
   </div>
@@ -28,6 +29,11 @@ export default {
 };
 </script>
 <style>
+@media (min-width: 2560px) {
+  #container {
+    height: 100vh;
+  }
+}
 img {
   width: 90%;
 }
