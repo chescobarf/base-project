@@ -1,7 +1,7 @@
 import { NuxtLink } from '../.nuxt/components';
 <template>
   <div
-    class="grid place-content-center bg-gradient-to-r from-primary-900 to-secondary-900"
+    class="grid place-content-center bg-gradient-to-r from-primary-900 to-secondary-900 h-screen"
   >
     <div id="ff-compose"></div>
   </div>
