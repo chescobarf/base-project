@@ -60,7 +60,7 @@ import {
   DisclosureButton,
   DisclosurePanel,
 } from "@headlessui/vue";
-import { ChevronUpIcon } from "@heroicons/vue/solid/index.js";
+import { ChevronUpIcon } from "@heroicons/vue/solid";
 
 const questions = ref({
   Transferencias: [
