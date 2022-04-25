@@ -1,0 +1,50 @@
+<template>
+  <div>
+    <Heading content="Pilotos que confiaron en Autocred" />
+    <Carousel
+      :items-to-show="3"
+      :wrapAround="true"
+      :itemsToScroll="1"
+      :autoplay="2000"
+    >
+      <slide v-for="slide in 4" :key="slide">
+        <!-- <div class="slide bg-secondary-900 shadow-md">{{ slide }}</div> -->
+        <CardComentario1 />
+      </slide>
+      <template #addons>
+        <Navigation />
+      </template>
+    </Carousel>
+  </div>
+</template>
+
+<script setup>
+import { Carousel, Slide, Navigation } from "vue3-carousel";
+import "vue3-carousel/dist/carousel.css";
+import Heading from "~~/components/Heading.vue";
+import CardComentario1 from "../components/Card-Comentario.vue";
+</script>
+
+<style>
+.carousel__viewport {
+  padding-bottom: 1rem;
+}
+li.carousel__slide {
+  padding-left: 1rem;
+  padding-left: 1rem;
+}
+
+.slide {
+  height: 200px;
+  width: 200px;
+}
+
+.carousel__slide.carousel__slide--active.carousel__slide--visible {
+  transform: scale(1);
+}
+
+.carousel__slide.carousel__slide--prev,
+.carousel__slide.carousel__slide--visible {
+  transform: scale(0.8);
+}
+</style>
