@@ -1,20 +1,17 @@
 <template>
-  <div class="grid gap-12">
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
+  <div class="grid gap-12 w-full">
+    <Noticia />
+    <Noticia />
+    <Noticia />
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import Noticia from "~~/components/Noticia.vue";
+</script>
 
 <style scoped>
 .grid {
-  grid-template-columns: 40% 30% 30%;
-}
-.box {
-  height: 300px;
-  width: auto;
-  background-color: aquamarine;
+  grid-template-columns: 1.5fr 1fr 1fr;
 }
 </style>

@@ -8,8 +8,8 @@
         secondary
         class="cursor-pointer mb-4"
       />
-      <GridNoticias />
     </div>
+    <GridNoticias />
   </div>
 </template>
 
