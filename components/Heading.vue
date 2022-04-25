@@ -1,7 +1,7 @@
 <template>
   <component
     :is="headingType"
-    class="font-bold"
+    class="font-bold text-primary-900"
     :class="{ 'text-primary-900': primary, 'text-secondary-900': secondary }"
   >
     {{ content }}
