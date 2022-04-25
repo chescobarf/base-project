@@ -78,7 +78,7 @@ import {
   ComboboxOption,
   TransitionRoot,
 } from "@headlessui/vue";
-import { CheckIcon, SelectorIcon } from "@heroicons/vue/solid";
+import { CheckIcon, SelectorIcon } from "@heroicons/vue/solid/index.js";
 import { brandsCars } from "assets/helpers/API";
 import { getData } from "assets/helpers/Axios";
 defineProps({
