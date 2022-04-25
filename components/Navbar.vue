@@ -329,7 +329,7 @@ import {
   ViewGridIcon,
   XIcon,
 } from "@heroicons/vue/outline";
-import { ChevronDownIcon } from "@heroicons/vue/solid";
+import { ChevronDownIcon } from "@heroicons/vue/solid/index.js";
 import { NuxtLink } from "../.nuxt/components";
 import Button1 from "./Button.vue";
 
