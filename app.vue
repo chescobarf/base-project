@@ -19,6 +19,7 @@
 
     <!-- <FormVue /> -->
     <NuxtPage />
+    <Footer />
   </div>
 </template>
 
@@ -32,4 +33,5 @@ import Video from "./components/Video.vue";
 import InputEmail from "./components/Input-Email.vue";
 import FormVue from "./layouts/Form.vue";
 import Navbar from "./components/Navbar.vue";
+import Footer from "./components/Footer.vue";
 </script>
