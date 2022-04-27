@@ -24,6 +24,9 @@
         </div>
         <SelectServicios label="Que servicios necesitas?" class="w-full" />
         <TextArea1 label="Como te podemos ayudar?" id="textarea" />
+        <div class="flex justify-end">
+          <ButtonVue text="Enviar" class="outline-primary" />
+        </div>
       </div>
       <div class="bg-white rounded-xl px-6 py-7">
         <Heading
@@ -52,6 +55,7 @@ import SelectServicios from "~~/components/SelectServicios.vue";
 import TextArea1 from "~~/components/TextArea.vue";
 import Map from "~~/components/Map.vue";
 import { direcciones } from "~~/assets/helpers/API";
+import ButtonVue from "~~/components/Button.vue";
 </script>
 
 <style scoped>
