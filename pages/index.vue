@@ -19,7 +19,7 @@
             class="mb-3"
           />
           <div class="flex flex-row gap-4">
-            <Button text="Quiero Vender" class="default" />
+            <Button text="Quiero Vender" class="secondary" />
             <Button text="Quiero Comprar" class="outline-primary" />
           </div>
         </div>
@@ -35,6 +35,8 @@
       </template>
     </BannerHome>
     <Ventajas />
+    <Servicios />
+
     <Respaldo />
     <Comentarios />
     <DondeEstamos />
@@ -45,6 +47,7 @@
 
 <script setup>
 import Container from "~~/layouts/Container.vue";
+import Servicios from "~~/layouts/Servicios.vue";
 import BannerHome from "~~/layouts/BannerHome.vue";
 import Ventajas from "~~/layouts/Ventajas.vue";
 import Respaldo from "~~/layouts/Respaldo.vue";
@@ -54,6 +57,7 @@ import Comentarios from "~~/layouts/Comentarios.vue";
 import DondeEstamos from "~~/layouts/DondeEstamos.vue";
 import Medios from "~~/layouts/Medios.vue";
 import Hablemos from "~~/layouts/Hablemos.vue";
+import CardServicio1 from "~~/components/CardServicio.vue";
 </script>
 
 <style scoped></style>
