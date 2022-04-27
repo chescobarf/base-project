@@ -23,3 +23,11 @@ export const direcciones = [
     { name: 'Temuco', direccion: 'Direccion Temuco 1000', telefono: '+5692342423', correo: 'contacto@autocred.cl', },
     { name: 'Otras Regiones', direccion: 'Direccion Otras Regiones 1000', telefono: '+5692342423', correo: 'contacto@autocred.cl', },
 ]
+
+export const servicios = [
+    { id: 1, name: "Transferencias" },
+    { id: 2, name: "Financiamientos" },
+    { id: 3, name: "Seguro" },
+    { id: 4, name: "Tag" },
+
+];

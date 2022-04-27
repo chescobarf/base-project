@@ -11,7 +11,7 @@
 
 <script setup>
 import InputRutVue from "~~/components/Input-Rut.vue";
-import Select1 from "~~/components/Select.vue";
+import Select1 from "~~/components/SelectMarcas.vue";
 import Input from "~~/components/Form/Input.vue";
 </script>
 

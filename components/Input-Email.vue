@@ -1,14 +1,15 @@
 <template>
-  <div class="relative py-6 w-fit">
-    <span v-show="focus" class="absolute top-0 left-0 text-sm">
+  <div class="relative py-6 w-full">
+    <label :for="id">{{ label }}</label>
+    <!-- <span v-show="focus" class="absolute top-0 left-0 text-sm">
       {{ placeholder }}
     </span>
     <span v-show="hover" class="block absolute top-0 right-0 text-black-100">{{
       hoverText
-    }}</span>
+    }}</span> -->
     <input
       required
-      class="px-2 py-1 border border-solid focus-visible:outline-primary-700 rounded"
+      class="px-2 py-1 border border-solid focus-visible:outline-primary-700 rounded w-full"
       type="email"
       :placeholder="placeholder"
       v-model="email"
@@ -16,6 +17,7 @@
       @focusout="focus = false"
       @mouseover="hover = true"
       @mouseleave="hover = false"
+      :id="id"
     />
     <span class="text-red-600 block">{{ validated }}</span>
   </div>
@@ -27,6 +29,8 @@ import { ref, computed, onUpdated, unref } from "vue";
 defineProps({
   placeholder: String,
   hoverText: String,
+  id: String,
+  label: String,
 });
 const email = ref("");
 const focus = ref(false);

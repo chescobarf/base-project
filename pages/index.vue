@@ -39,6 +39,7 @@
     <Comentarios />
     <DondeEstamos />
     <Medios />
+    <Hablemos />
   </Container>
 </template>
 
@@ -52,6 +53,7 @@ import Button from "~~/components/Button.vue";
 import Comentarios from "~~/layouts/Comentarios.vue";
 import DondeEstamos from "~~/layouts/DondeEstamos.vue";
 import Medios from "~~/layouts/Medios.vue";
+import Hablemos from "~~/layouts/Hablemos.vue";
 </script>
 
 <style scoped></style>
