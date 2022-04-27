@@ -37,6 +37,7 @@
     <Ventajas />
     <Servicios />
     <Respaldo />
+    <Experiencia />
     <Comentarios />
     <DondeEstamos />
     <Medios />
@@ -56,7 +57,7 @@ import Comentarios from "~~/layouts/Comentarios.vue";
 import DondeEstamos from "~~/layouts/DondeEstamos.vue";
 import Medios from "~~/layouts/Medios.vue";
 import Hablemos from "~~/layouts/Hablemos.vue";
-import CardServicio1 from "~~/components/CardServicio.vue";
+import Experiencia from "~~/layouts/Experiencia.vue";
 </script>
 
 <style scoped></style>

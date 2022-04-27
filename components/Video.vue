@@ -6,6 +6,7 @@
       :controls="controls"
       :autoplay="autoplay"
       :muted="muted"
+      class="rounded-3xl"
     >
       <source :src="src" type="video/mp4" />
     </video>
