@@ -1,12 +1,63 @@
 <template>
-  <div>
-    <div class="imagen"></div>
+  <div class="mb-60">
+    <div class="relative grid">
+      <img
+        src="https://picsum.photos/seed/picsum/1000/450"
+        alt=""
+        class="imagen z-0"
+      />
+      <div class="z-10 absolute top-16 left-16">
+        <Heading1 content="Simula tu credito on la mejor cuota" white />
+        <Heading1 content="Con la mejor cuota" white />
+      </div>
+      <div class="card shadow-2xl px-6 py-8">
+        <div class="title border-b pb-4 border-primary-900">
+          <Heading1 content="Simulador" headingType="h3" />
+        </div>
+        <div class="content py-6 grid grid-cols-3">
+          <div class="col-span-1">
+            <InputRut1 placeholder="RUT" class="w-full" />
+            <div class="flex">
+              <SelectMarcas1 />
+              <SelectMarcas1 />
+            </div>
+            <div class="flex">
+              <Input placeholder="Modelo" />
+              <SelectMarcas1 />
+            </div>
+            <SelectMarcas2 />
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import Heading1 from "~~/components/Heading.vue";
+import InputRut1 from "~~/components/Input-Rut.vue";
+import SelectMarcas1 from "~~/components/SelectMarcas.vue";
+import Input from "~~/components/Form/Input.vue";
+import SelectMarcas2 from "~~/components/SelectMarcas.vue";
+</script>
 
 <style scoped>
 .imagen {
+  width: 100%;
+  max-width: 100%;
+  height: 450px;
+  background-color: aquamarine;
+  border-radius: 40px;
+  object-fit: fill;
+  filter: brightness(0.8);
+}
+.card {
+  width: 95%;
+  height: 500px;
+  background-color: white;
+  border-radius: 40px;
+  position: relative;
+  top: -10rem;
+  justify-self: center;
 }
 </style>

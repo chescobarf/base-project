@@ -30,7 +30,7 @@
     </BannerHome>
     <ServiciosVendedores />
     <Features />
-    <!-- <Simulador /> -->
+    <Simulador />
     <Comentarios />
     <Hablemos />
   </Container>
@@ -45,6 +45,7 @@ import Button from "~~/components/Button.vue";
 import Comentarios from "~~/layouts/Comentarios.vue";
 import Hablemos from "~~/layouts/Hablemos.vue";
 import Features from "~~/layouts/vendedores/Features.vue";
+import Simulador from "~~/layouts/Simulador.vue";
 </script>
 
 <style scoped></style>
