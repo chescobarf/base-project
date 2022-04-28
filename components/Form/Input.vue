@@ -36,6 +36,8 @@
       @focusin="focus = true"
       @focusout="focus = false"
       :id="id"
+      :value="value"
+      :disabled="disabled"
     />
   </div>
 </template>
@@ -48,6 +50,8 @@ defineProps({
   id: String,
   label: String,
   isPhone: Boolean,
+  value: String,
+  disabled: Boolean,
 });
 const hover = ref(false);
 let focus = ref(false);

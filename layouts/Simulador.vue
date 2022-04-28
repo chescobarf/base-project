@@ -14,7 +14,36 @@
         <div class="title border-b pb-4 border-primary-900">
           <Heading1 content="Simulador" headingType="h3" />
         </div>
-        <div class="content py-6 grid grid-cols-3">
+        <div class="content py-6 grid grid-cols-3 gap-6 border-b">
+          <div class="col-span-1">
+            <InputRut1 placeholder="RUT" class="w-full" />
+            <div class="flex">
+              <SelectMarcas1 />
+              <SelectMarcas1 />
+            </div>
+            <div class="flex">
+              <Input placeholder="Modelo" />
+              <SelectMarcas1 />
+            </div>
+            <SelectMarcas2 />
+          </div>
+          <div class="col-span-1 px-5 border-x">
+            <Heading1
+              content="Valor del vehiculo"
+              headingType="h4"
+              class="mb-4"
+            />
+            <SliderRange1 />
+            <div class="flex">
+              <SelectMarcas1 />
+              <SelectMarcas1 />
+            </div>
+            <div class="flex">
+              <Input placeholder="Modelo" />
+              <SelectMarcas1 />
+            </div>
+            <SelectMarcas2 />
+          </div>
           <div class="col-span-1">
             <InputRut1 placeholder="RUT" class="w-full" />
             <div class="flex">
@@ -28,6 +57,9 @@
             <SelectMarcas2 />
           </div>
         </div>
+        <div class="footer grid justify-center py-4">
+          <Button1 text="Contactanos" class="secondary" />
+        </div>
       </div>
     </div>
   </div>
@@ -39,6 +71,8 @@ import InputRut1 from "~~/components/Input-Rut.vue";
 import SelectMarcas1 from "~~/components/SelectMarcas.vue";
 import Input from "~~/components/Form/Input.vue";
 import SelectMarcas2 from "~~/components/SelectMarcas.vue";
+import Button1 from "~~/components/Button.vue";
+import SliderRange1 from "~~/components/Slider-Range.vue";
 </script>
 
 <style scoped>
@@ -53,7 +87,7 @@ import SelectMarcas2 from "~~/components/SelectMarcas.vue";
 }
 .card {
   width: 95%;
-  height: 500px;
+  height: auto;
   background-color: white;
   border-radius: 40px;
   position: relative;

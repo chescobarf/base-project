@@ -1,5 +1,5 @@
 <template>
-  <div class="w-52 mx-auto">
+  <div class="w-full">
     <Slider
       v-model="value"
       class="slider-red"
@@ -9,20 +9,17 @@
       :step="10"
       :format="{ prefix: '$' }"
     />
+    <Input :value="formatValue" disabled />
   </div>
 </template>
 
-<script>
+<script setup>
 import Slider from "@vueform/slider";
+import Input from "./Form/Input.vue";
+import { ref, unref, computed } from "vue";
 
-export default {
-  components: {
-    Slider,
-  },
-  data: () => ({
-    value: 0,
-  }),
-};
+const value = ref(0);
+const formatValue = computed(() => "$" + unref(value));
 </script>
 
 <style src="@vueform/slider/themes/default.css"></style>
