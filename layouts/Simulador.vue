@@ -37,17 +37,9 @@
               <SliderRange1 />
             </div>
           </div>
-          <div class="col-span-1">
-            <InputRut1 placeholder="RUT" class="w-full" />
-            <div class="flex">
-              <SelectMarcas1 />
-              <SelectMarcas1 />
-            </div>
-            <div class="flex">
-              <Input placeholder="Modelo" />
-              <SelectMarcas1 />
-            </div>
-            <SelectMarcas2 />
+          <div class="col-span-1 flex flex-col justify-between">
+            <Acordion1 />
+            <Button1 text="Enviar" class="outline-primary" />
           </div>
         </div>
         <div class="footer grid justify-center py-4">
@@ -66,6 +58,7 @@ import Input from "~~/components/Form/Input.vue";
 import SelectMarcas2 from "~~/components/SelectMarcas.vue";
 import Button1 from "~~/components/Button.vue";
 import SliderRange1 from "~~/components/Slider-Range.vue";
+import Acordion1 from "~~/components/Acordion.vue";
 </script>
 
 <style scoped>

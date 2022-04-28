@@ -86,3 +86,14 @@ export const serviciosCompradores = [
         img: "https://uilogos.co/img/logomark/lighting.png",
     },
 ];
+
+export const camposSimulacion = [
+    "CAE",
+    "Tasa de interés",
+    "Monto total a financiar",
+    "Costo total del crédito",
+    "Valor última cuota (VFMG)"
+]
+export const cuotasSimulacion = [
+    12, 24, 36, 48
+]
