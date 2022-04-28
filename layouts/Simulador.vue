@@ -7,7 +7,7 @@
         class="imagen z-0"
       />
       <div class="z-10 absolute top-16 left-16">
-        <Heading1 content="Simula tu credito on la mejor cuota" white />
+        <Heading1 content="Simula tu credito" white />
         <Heading1 content="Con la mejor cuota" white />
       </div>
       <div class="card shadow-2xl px-6 py-8">
