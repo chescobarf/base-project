@@ -1,15 +1,16 @@
 <template>
   <div class="w-full">
+    <Input :value="formatValue" disabled />
     <Slider
       v-model="value"
-      class="slider-red"
+      class="slider-red secon"
       :max="100"
       :min="10"
       :merge="100"
       :step="10"
       :format="{ prefix: '$' }"
+      showTooltip="focus"
     />
-    <Input :value="formatValue" disabled />
   </div>
 </template>
 
@@ -25,8 +26,8 @@ const formatValue = computed(() => "$" + unref(value));
 <style src="@vueform/slider/themes/default.css"></style>
 <style>
 .slider-red {
-  --slider-connect-bg: #29235f;
-  --slider-tooltip-bg: #ef44bc;
-  --slider-handle-ring-color: #ef44bc;
+  --slider-connect-bg: rgb(212, 15, 125);
+  --slider-tooltip-bg: rgb(212, 15, 125);
+  --slider-handle-ring-color: rgb(212, 15, 125);
 }
 </style>

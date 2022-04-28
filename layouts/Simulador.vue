@@ -27,22 +27,15 @@
             </div>
             <SelectMarcas2 />
           </div>
-          <div class="col-span-1 px-5 border-x">
-            <Heading1
-              content="Valor del vehiculo"
-              headingType="h4"
-              class="mb-4"
-            />
-            <SliderRange1 />
-            <div class="flex">
-              <SelectMarcas1 />
-              <SelectMarcas1 />
+          <div class="col-span-1 px-5 border-x grid gap-6">
+            <div class="price">
+              <Heading1 content="Valor del vehiculo" headingType="h4" />
+              <SliderRange1 />
             </div>
-            <div class="flex">
-              <Input placeholder="Modelo" />
-              <SelectMarcas1 />
+            <div class="pie">
+              <Heading1 content="Valor del pie" headingType="h4" />
+              <SliderRange1 />
             </div>
-            <SelectMarcas2 />
           </div>
           <div class="col-span-1">
             <InputRut1 placeholder="RUT" class="w-full" />
