@@ -1,5 +1,5 @@
 <template>
-  <div class="relative py-6 w-fit">
+  <div class="relative py-6 w-full">
     <span v-show="focus" class="absolute top-0 left-0 text-sm">
       {{ placeholder }}
     </span>
@@ -8,7 +8,7 @@
     }}</span>
     <input
       required
-      class="px-2 py-1 border border-solid focus-visible:outline-primary-700 rounded"
+      class="px-2 py-1 border border-solid focus-visible:outline-primary-700 rounded-md w-full"
       type="text"
       :placeholder="placeholder"
       v-model="rut"

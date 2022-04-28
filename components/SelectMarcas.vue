@@ -1,5 +1,5 @@
 <template>
-  <div class="py-6 w-fit">
+  <div class="py-6 w-full">
     <Combobox v-model="selected">
       <div class="relative">
         <ComboboxInput
