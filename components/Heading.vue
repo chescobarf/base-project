@@ -2,7 +2,11 @@
   <component
     :is="headingType"
     class="font-bold text-primary-900"
-    :class="{ 'text-primary-900': primary, 'text-secondary-900': secondary }"
+    :class="{
+      'text-primary-900': primary,
+      'text-secondary-900': secondary,
+      'text-white': white,
+    }"
   >
     {{ content }}
   </component>
@@ -19,6 +23,7 @@ defineProps({
   },
   primary: Boolean,
   secondary: Boolean,
+  white: Boolean,
 });
 </script>
 
@@ -40,5 +45,8 @@ h5 {
 }
 h6 {
   font-size: medium;
+}
+.text-white {
+  color: white;
 }
 </style>
