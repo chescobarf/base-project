@@ -6,14 +6,14 @@
         class="flex justify-between items-center py-6 md:justify-start md:space-x-10"
       >
         <div class="flex justify-start lg:w-0 lg:flex-1">
-          <a href="#">
+          <NuxtLink href="/">
             <span class="sr-only">Autocred</span>
             <img
               class="h-8 w-auto sm:h-10"
               src="~/assets/img/autocred2.png"
               alt=""
             />
-          </a>
+          </NuxtLink>
         </div>
         <div class="-mr-2 -my-2 md:hidden">
           <PopoverButton
@@ -332,6 +332,7 @@ import {
 import { ChevronDownIcon } from "@heroicons/vue/solid";
 import { NuxtLink } from "../.nuxt/components";
 import Button1 from "./Button.vue";
+import { links } from "~~/assets/helpers/constants";
 
 const solutions = [
   {
@@ -408,14 +409,6 @@ const recentPosts = [
     href: "#",
   },
   { id: 3, name: "Improve your customer experience", href: "#" },
-];
-const links = [
-  { name: "Autocred", url: "/Autocred" },
-  { name: "Vendedores", url: "/Vendedores" },
-  { name: "Compradores", url: "/Compradores" },
-  { name: "Servicios", url: "/Servicios" },
-  { name: "Preguntas Frecuentes", url: "/faq" },
-  { name: "Contacto", url: "/Contacto" },
 ];
 
 export default {

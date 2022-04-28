@@ -1,9 +1,9 @@
 export const links = [
-    { name: "Autocred", url: "/Autocred" },
+    { name: "Inicio", url: "/" },
+    { name: "Nosotros", url: "/Nosotros" },
     { name: "Vendedores", url: "/Vendedores" },
     { name: "Compradores", url: "/Compradores" },
     { name: "Servicios", url: "/Servicios" },
-    { name: "Preguntas Frecuentes", url: "/faq" },
-    { name: "Contacto", url: "/Contacto" },
+    { name: "Preguntas Frecuentes", url: "/Preguntas-Frecuentes" },
 ];
 
