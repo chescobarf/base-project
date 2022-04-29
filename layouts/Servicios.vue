@@ -1,9 +1,34 @@
 <template>
   <div class="mb-28">
-    <Heading content="En que consisten nuestros servicios?" class="mb-8" />
-    <Heading content="Vendedores" class="pb-8 border-b mb-8" />
+    <Heading
+      content="En que consisten nuestros servicios?"
+      class="mb-8"
+      v-if="title"
+    />
+    <Heading
+      content="Vendedores"
+      class="pb-4 border-b mb-8"
+      :class="{ 'mb-1': descriptionVendedores }"
+    />
+    <p
+      v-if="descriptionVendedores"
+      class="mb-12 font-medium text-primary-900 text-lg"
+    >
+      {{ descriptionVendedores }}
+    </p>
     <ServiciosList :data="serviciosVendores" right class="mb-8" />
-    <Heading content="Compradores" class="pb-8 border-b mb-8" />
+    <Heading
+      content="Compradores"
+      class="pb-4 border-b mb-8"
+      :class="{ 'mb-1': descriptionCompradores }"
+    />
+    <p
+      v-if="descriptionCompradores"
+      class="mb-12 font-medium text-primary-900 text-lg"
+    >
+      {{ descriptionCompradores }}
+    </p>
+
     <ServiciosList :data="serviciosCompradores" />
   </div>
 </template>
@@ -15,6 +40,15 @@ import {
   serviciosVendores,
   serviciosCompradores,
 } from "~~/assets/helpers/constants";
+
+defineProps({
+  descriptionVendedores: String,
+  descriptionCompradores: String,
+  title: {
+    type: Boolean,
+    default: true,
+  },
+});
 </script>
 
 <style lang="scss" scoped></style>

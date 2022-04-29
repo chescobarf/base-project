@@ -1,6 +1,6 @@
 <template>
   <div class="w-full flex flex-col md:flex-row mx-auto my-20 px-12">
-    <div class="w-1/2 flex flex-col justify-between">
+    <div class="w-1/2">
       <slot name="content"></slot>
     </div>
     <div class="w-1/2">

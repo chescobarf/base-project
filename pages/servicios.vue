@@ -3,7 +3,7 @@
     <BannerHome>
       <template #content>
         <Heading
-          content="Te acompanamos en el proceso de venta de tu auto"
+          content="En que consisten nuestros servicios?"
           headingType="h2"
           class="mb-5"
         />
@@ -12,11 +12,6 @@
           headingType="h4"
           class="mb-5"
         />
-        <div>
-          <div class="flex flex-row gap-4">
-            <Button text="Contactanos" class="secondary" />
-          </div>
-        </div>
       </template>
       <template #image>
         <div class="grid place-content-center">
@@ -28,9 +23,11 @@
         </div>
       </template>
     </BannerHome>
-    <ServiciosVendedores />
-    <Features />
-    <Simulador />
+    <Servicios
+      descriptionVendedores="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates illum distinctio quasi reiciendis, magni sequi, omnis illo id ad ullam facilis fugit, obcaecati debitis iste. Blanditiis eaque amet dolorum delectus?"
+      descriptionCompradores="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates illum distinctio quasi reiciendis, magni sequi, omnis illo id ad ullam facilis fugit, obcaecati debitis iste. Blanditiis eaque amet dolorum delectus?"
+      :title="false"
+    />
     <Comentarios />
     <Hablemos />
   </Container>
@@ -38,14 +35,12 @@
 
 <script setup>
 import Container from "~~/layouts/Container.vue";
-import ServiciosVendedores from "~~/layouts/vendedores/ServiciosVendedores.vue";
+import Servicios from "~~/layouts/Servicios.vue";
 import BannerHome from "~~/layouts/BannerHome.vue";
 import Heading from "~~/components/Heading.vue";
 import Button from "~~/components/Button.vue";
 import Comentarios from "~~/layouts/Comentarios.vue";
 import Hablemos from "~~/layouts/Hablemos.vue";
-import Features from "~~/layouts/vendedores/Features.vue";
-import Simulador from "~~/layouts/Simulador.vue";
 </script>
 
 <style scoped></style>

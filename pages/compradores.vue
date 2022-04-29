@@ -3,7 +3,7 @@
     <BannerHome>
       <template #content>
         <Heading
-          content="Te acompanamos en el proceso de venta de tu auto"
+          content="Te acompanamos en la compra de tu proximo auto"
           headingType="h2"
           class="mb-5"
         />
@@ -14,7 +14,7 @@
         />
         <div>
           <div class="flex flex-row gap-4">
-            <Button text="Contactanos" class="secondary" />
+            <Button text="Contactanos" class="primary" />
           </div>
         </div>
       </template>
@@ -28,7 +28,7 @@
         </div>
       </template>
     </BannerHome>
-    <ServiciosVendedores />
+    <ServiciosCompradores />
     <Features />
     <Simulador />
     <Comentarios />
@@ -38,13 +38,13 @@
 
 <script setup>
 import Container from "~~/layouts/Container.vue";
-import ServiciosVendedores from "~~/layouts/vendedores/ServiciosVendedores.vue";
+import ServiciosCompradores from "~~/layouts/compradores/ServiciosCompradores.vue";
 import BannerHome from "~~/layouts/BannerHome.vue";
 import Heading from "~~/components/Heading.vue";
 import Button from "~~/components/Button.vue";
 import Comentarios from "~~/layouts/Comentarios.vue";
 import Hablemos from "~~/layouts/Hablemos.vue";
-import Features from "~~/layouts/vendedores/Features.vue";
+import Features from "~~/layouts/compradores/Features.vue";
 import Simulador from "~~/layouts/Simulador.vue";
 </script>
 
