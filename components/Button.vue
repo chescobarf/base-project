@@ -1,14 +1,19 @@
 <template>
-  <button
-    class="whitespace-nowrap inline-flex items-center justify-center py-2 border border-transparent rounded-md shadow-sm text-base font-medium px-7 text-white bg-secondary-900 hover:bg-secondary-700"
+  <div
+    class="whitespace-nowrap inline-flex gap-1 items-center justify-center py-2 border border-transparent rounded-md shadow-sm text-base px-7 text-white bg-secondary-900 hover:bg-secondary-700 cursor-pointer"
   >
-    {{ text }}
-  </button>
+    <button class="font-medium">
+      {{ text }}
+    </button>
+    <UserIcon class="h-5 w-5" v-if="user" />
+  </div>
 </template>
 
 <script setup>
+import { UserIcon } from "@heroicons/vue/outline";
 defineProps({
   text: String,
+  user: Boolean,
   type: {
     validator(value) {
       return [
