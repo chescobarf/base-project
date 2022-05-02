@@ -17,7 +17,7 @@
         </div>
         <div class="-mr-2 -my-2 md:hidden">
           <PopoverButton
-            class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+            class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary-900"
           >
             <span class="sr-only">Open menu</span>
             <MenuIcon class="h-6 w-6" aria-hidden="true" />
@@ -27,8 +27,9 @@
           <NuxtLink
             v-for="link in links"
             :key="link"
-            class="text-base font-medium text-gray-500 hover:text-secondary-800 hover:cursor-pointer"
+            class="text-base font-medium text-primary-700 hover:text-primary-900 hover:cursor-pointer hover:font-semibold"
             :href="link.url"
+            activeClass="activeMenu"
           >
             {{ link.name }}
           </NuxtLink>
@@ -308,7 +309,7 @@
   </Popover>
 </template>
 
-<script>
+<script setup>
 import {
   Popover,
   PopoverButton,
@@ -329,7 +330,6 @@ import {
   ViewGridIcon,
   XIcon,
 } from "@heroicons/vue/outline";
-import { ChevronDownIcon } from "@heroicons/vue/solid";
 import { NuxtLink } from "../.nuxt/components";
 import Button1 from "./Button.vue";
 import { links } from "~~/assets/helpers/constants";
@@ -410,26 +410,10 @@ const recentPosts = [
   },
   { id: 3, name: "Improve your customer experience", href: "#" },
 ];
-
-export default {
-  components: {
-    Popover,
-    PopoverButton,
-    PopoverGroup,
-    PopoverPanel,
-    ChevronDownIcon,
-    MenuIcon,
-    XIcon,
-    Button1,
-  },
-  setup() {
-    return {
-      solutions,
-      callsToAction,
-      resources,
-      recentPosts,
-      links,
-    };
-  },
-};
 </script>
+<style>
+.activeMenu {
+  color: #ba0b7c !important;
+  font-weight: 700;
+}
+</style>
