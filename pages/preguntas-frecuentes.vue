@@ -2,21 +2,12 @@
   <Container>
     <BannerHome>
       <template #content>
-        <Heading
-          content="Hacer un buen negocio es un camino en que muchos se pierden. Para llegar a destino, confia en un coopiloto experto"
-          headingType="h2"
-          class="mb-5"
-        />
+        <Heading content="Preguntas Frecuentes" headingType="h2" class="mb-5" />
         <Heading
           content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
           headingType="h3"
           class="mb-5"
         />
-        <div>
-          <div class="flex flex-row gap-4">
-            <Button text="Viajemos juntos" class="secondary" />
-          </div>
-        </div>
       </template>
       <template #image>
         <div class="grid place-content-center">
