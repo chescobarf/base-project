@@ -6,8 +6,6 @@ export const links = [
     { name: "Servicios", url: "/Servicios" },
     { name: "Preguntas Frecuentes", url: "/Preguntas-Frecuentes" },
 ];
-
-
 export const featuresVendedores = [
     {
         name: "Credito rapido",
@@ -124,7 +122,6 @@ export const serviciosCompradores = [
         img: "https://uilogos.co/img/logomark/lighting.png",
     },
 ];
-
 export const camposSimulacion = [
     "CAE",
     "Tasa de interés",
@@ -135,10 +132,23 @@ export const camposSimulacion = [
 export const cuotasSimulacion = [
     12, 24, 36, 48
 ]
-
 export const valores = [
     { title: "Transparencia", content: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus laboriosam sit, illum animi quaerat vero eaque earum cum! Cumque enim minus eum. Nobis ad quaerat labore laboriosam ipsum laudantium consectetur?", src: "https://acsp.cl/wp-content/uploads/2020/08/Shape.png" },
     { title: "Transparencia", content: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus laboriosam sit, illum animi quaerat vero eaque earum cum! Cumque enim minus eum. Nobis ad quaerat labore laboriosam ipsum laudantium consectetur?", src: "https://acsp.cl/wp-content/uploads/2020/08/Shape.png" },
     { title: "Transparencia", content: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus laboriosam sit, illum animi quaerat vero eaque earum cum! Cumque enim minus eum. Nobis ad quaerat labore laboriosam ipsum laudantium consectetur?", src: "https://acsp.cl/wp-content/uploads/2020/08/Shape.png" },
     { title: "Transparencia", content: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus laboriosam sit, illum animi quaerat vero eaque earum cum! Cumque enim minus eum. Nobis ad quaerat labore laboriosam ipsum laudantium consectetur?", src: "https://acsp.cl/wp-content/uploads/2020/08/Shape.png" }
 ]
+export const questionsComprador = [
+    { title: "Lorem ipsum?", content: "No" },
+    { title: "Lorem ipsum?", content: "Yes" },
+    { title: "Lorem ipsum?", content: "Maybe" },
+    { title: "Lorem ipsum?", content: "Yes!" },
+    { title: "Lorem ipsum?", content: "No!" }
+];
+export const questionsVendedor = [
+    { title: "Lorem ipsum?", content: "No" },
+    { title: "Lorem ipsum?", content: "Yes" },
+    { title: "Lorem ipsum?", content: "Maybe" },
+    { title: "Lorem ipsum?", content: "Yes!" },
+    { title: "Lorem ipsum?", content: "No!" }
+];
