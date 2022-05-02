@@ -27,7 +27,7 @@
           <NuxtLink
             v-for="link in links"
             :key="link"
-            class="text-base font-medium text-primary-700 hover:text-primary-900 hover:cursor-pointer hover:font-semibold"
+            class="text-lg font-medium text-primary-700 hover:text-primary-900 hover:cursor-pointer hover:font-semibold"
             :href="link.url"
             activeClass="activeMenu"
           >
@@ -205,7 +205,7 @@
           </Popover> -->
         </PopoverGroup>
         <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-          <Button1 text="Ingresar" outlinePrimary user />
+          <Button1 text="Ingresar" outlinePrimary user class="text-lg" />
         </div>
       </div>
     </div>
