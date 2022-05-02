@@ -19,8 +19,8 @@
             class="mb-3"
           />
           <div class="flex flex-row gap-4">
-            <Button text="Quiero Vender" class="secondary" />
-            <Button text="Quiero Comprar" class="outline-primary" />
+            <Button text="Quiero Vender" secondary />
+            <Button text="Quiero Comprar" outlinePrimary />
           </div>
         </div>
       </template>

@@ -39,11 +39,11 @@
           </div>
           <div class="col-span-1 flex flex-col justify-between">
             <Acordion1 />
-            <Button1 text="Enviar" class="outline-primary" />
+            <Button1 text="Enviar" outlinePrimary />
           </div>
         </div>
         <div class="footer grid justify-center py-4">
-          <Button1 text="Contactanos" class="secondary" />
+          <Button1 text="Contactanos" secondary />
         </div>
       </div>
     </div>

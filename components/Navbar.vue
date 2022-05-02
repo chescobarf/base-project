@@ -204,7 +204,7 @@
           </Popover> -->
         </PopoverGroup>
         <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-          <Button1 text="Ingresar" class="outline-primary" user />
+          <Button1 text="Ingresar" outlinePrimary user />
         </div>
       </div>
     </div>

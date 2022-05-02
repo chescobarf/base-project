@@ -14,7 +14,7 @@
         />
         <div>
           <div class="flex flex-row gap-4">
-            <Button text="Contactanos" class="secondary" />
+            <Button text="Contactanos" secondary />
           </div>
         </div>
       </template>

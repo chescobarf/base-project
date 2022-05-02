@@ -6,7 +6,7 @@
       content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aspernatur optio quas modi assumenda in"
       headingType="h4"
     />
-    <Button text="Ver mas" class="w-min" />
+    <Button text="Ver mas" class="w-min" secondary />
   </div>
 </template>
 

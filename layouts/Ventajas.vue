@@ -6,9 +6,6 @@
       <VentajaCard />
       <VentajaCard />
     </div>
-    <div class="w-full grid place-content-center">
-      <ButtonVue text="Vamos!" />
-    </div>
   </div>
 </template>
 

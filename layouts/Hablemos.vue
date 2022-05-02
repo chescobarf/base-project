@@ -25,7 +25,7 @@
         <SelectServicios label="Que servicios necesitas?" class="w-full" />
         <TextArea1 label="Como te podemos ayudar?" id="textarea" />
         <div class="flex justify-end">
-          <ButtonVue text="Enviar" class="outline-primary" />
+          <ButtonVue text="Enviar" outlinePrimary />
         </div>
       </div>
       <div class="bg-white rounded-xl px-6 py-7">
