@@ -135,3 +135,10 @@ export const camposSimulacion = [
 export const cuotasSimulacion = [
     12, 24, 36, 48
 ]
+
+export const valores = [
+    { title: "Transparencia", content: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus laboriosam sit, illum animi quaerat vero eaque earum cum! Cumque enim minus eum. Nobis ad quaerat labore laboriosam ipsum laudantium consectetur?", src: "https://acsp.cl/wp-content/uploads/2020/08/Shape.png" },
+    { title: "Transparencia", content: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus laboriosam sit, illum animi quaerat vero eaque earum cum! Cumque enim minus eum. Nobis ad quaerat labore laboriosam ipsum laudantium consectetur?", src: "https://acsp.cl/wp-content/uploads/2020/08/Shape.png" },
+    { title: "Transparencia", content: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus laboriosam sit, illum animi quaerat vero eaque earum cum! Cumque enim minus eum. Nobis ad quaerat labore laboriosam ipsum laudantium consectetur?", src: "https://acsp.cl/wp-content/uploads/2020/08/Shape.png" },
+    { title: "Transparencia", content: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus laboriosam sit, illum animi quaerat vero eaque earum cum! Cumque enim minus eum. Nobis ad quaerat labore laboriosam ipsum laudantium consectetur?", src: "https://acsp.cl/wp-content/uploads/2020/08/Shape.png" }
+]

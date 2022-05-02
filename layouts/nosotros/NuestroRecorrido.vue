@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-16">
+  <div class="mb-1">
     <Heading1 content="Nuestro recorrido" />
     <div class="grid grid-cols-2 pattern">
       <img

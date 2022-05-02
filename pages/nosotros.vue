@@ -29,6 +29,7 @@
       </template>
     </BannerHome>
     <NuestroRecorrido />
+    <Valores />
     <Servicios />
     <Comentarios />
     <Respaldo />
@@ -46,6 +47,7 @@ import Button from "~~/components/Button.vue";
 import Comentarios from "~~/layouts/Comentarios.vue";
 import Hablemos from "~~/layouts/Hablemos.vue";
 import NuestroRecorrido from "~~/layouts/nosotros/NuestroRecorrido.vue";
+import Valores from "~~/layouts/nosotros/Valores.vue";
 </script>
 
 <style scoped></style>
