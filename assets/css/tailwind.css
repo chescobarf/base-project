@@ -6,3 +6,27 @@
   font-family: "AvantGarde_Book";
   src: url("../fonts/AvantGarde_Book.ttf");
 }
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/Causten-Regular.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/Causten-Medium.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/Causten-SemiBold.otf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/Causten-Bold.otf");
+  font-weight: 700;
+}
+
+body {
+  font-family: "Causten";
+}
