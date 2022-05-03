@@ -80,10 +80,6 @@ import {
 } from "@headlessui/vue";
 import { CheckIcon, SelectorIcon } from "@heroicons/vue/solid";
 import { brandsCars } from "assets/helpers/API";
-import { getData } from "assets/helpers/Axios";
-defineProps({
-  data: {},
-});
 let selected = ref(brandsCars[0]);
 let query = ref("");
 let filteredBrands = computed(() =>
@@ -96,9 +92,4 @@ let filteredBrands = computed(() =>
           .includes(query.value.toLowerCase().replace(/\s+/g, ""))
       )
 );
-const arrayData = ref();
-
-onMounted(async () => {
-  arrayData.value = await getData();
-});
 </script>
