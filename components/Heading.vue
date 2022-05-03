@@ -1,7 +1,7 @@
 <template>
   <component
     :is="headingType"
-    class="font-bold text-primary-900"
+    class="font-semibold text-primary-900"
     :class="{
       'text-primary-900': primary,
       'text-secondary-900': secondary,
@@ -29,13 +29,13 @@ defineProps({
 
 <style>
 h1 {
-  font-size: xxx-large;
+  font-size: 50px;
 }
 h2 {
-  font-size: xx-large;
+  font-size: 48px;
 }
 h3 {
-  font-size: x-large;
+  font-size: 26px;
 }
 h4 {
   font-size: larger;
