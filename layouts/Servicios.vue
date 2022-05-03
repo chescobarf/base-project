@@ -7,8 +7,9 @@
     />
     <Heading
       content="Vendedores"
-      class="pb-4 border-b mb-8"
+      class="pb-4 border-b mb-8 font-bold"
       :class="{ 'mb-1': descriptionVendedores }"
+      headingType="h3"
     />
     <p
       v-if="descriptionVendedores"
@@ -19,8 +20,9 @@
     <ServiciosList :data="serviciosVendores" right class="mb-8" />
     <Heading
       content="Compradores"
-      class="pb-4 border-b mb-8"
+      class="pb-4 border-b mb-8 font-bold"
       :class="{ 'mb-1': descriptionCompradores }"
+      headingType="h3"
     />
     <p
       v-if="descriptionCompradores"
