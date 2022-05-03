@@ -24,6 +24,7 @@
             <div class="flex">
               <Input placeholder="Modelo" />
               <SelectMarcas1 />
+              <SelectAnios1 />
             </div>
             <SelectMarcas2 />
           </div>
@@ -59,6 +60,7 @@ import SelectMarcas2 from "~~/components/SelectMarcas.vue";
 import Button1 from "~~/components/Button.vue";
 import SliderRange1 from "~~/components/Slider-Range.vue";
 import Acordion1 from "~~/components/Acordion.vue";
+import SelectAnios1 from "~~/components/SelectAnios.vue";
 </script>
 
 <style scoped>
