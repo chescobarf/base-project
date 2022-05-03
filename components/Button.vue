@@ -11,7 +11,7 @@
       'py-1': user,
     }"
   >
-    <button class="font-semibold">
+    <button class="font-semibold" :class="{ 'text-lg': user }">
       {{ text }}
     </button>
     <UserIcon class="h-5 w-5" v-if="user" />
