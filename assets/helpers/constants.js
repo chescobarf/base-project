@@ -153,28 +153,29 @@ export const questionsVendedor = [
     { title: "Lorem ipsum?", content: "No!" }
 ];
 export const brands = [
+
     {
-        alt: "hdi",
-        url: "/assets/img/brands/mallplaza.png",
+        alt: "mallplaza",
+        url: "/img/brands/mallplaza.png",
     },
     {
-        alt: "icar",
-        url: "/assets/img/brands/apumanque.png",
+        alt: "apumanque",
+        url: "/img/brands/apumanque.png",
     },
     {
-        alt: "brand3",
-        url: "/assets/img/brands/autofact.png",
+        alt: "autofact",
+        url: "/img/brands/autofact.png",
     },
     {
-        alt: "brand4",
-        url: "/assets/img/brands/forum.png",
+        alt: "forum",
+        url: "/img/brands/forum.png",
     },
     {
-        alt: "brand4",
-        url: "/assets/img/brands/tanner.png",
+        alt: "tanner",
+        url: "/img/brands/tanner.png",
     },
     {
-        alt: "brand4",
-        url: "/assets/img/brands/Yapo.png",
+        alt: "yapo",
+        url: "/img/brands/Yapo.png",
     },
 ];
