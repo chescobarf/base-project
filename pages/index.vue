@@ -15,12 +15,12 @@
         <div>
           <Heading
             content="En que viaje te guiamos?"
-            headingType="h4"
+            headingType="h3"
             class="mb-3"
           />
           <div class="flex flex-row gap-4">
-            <Button text="Quiero Vender" secondary />
-            <Button text="Quiero Comprar" outlinePrimary />
+            <Button text="Quiero vender" secondary />
+            <Button text="Quiero comprar" outlinePrimary />
           </div>
         </div>
       </template>
