@@ -5,10 +5,20 @@
       class="mb-4 text-black-100"
       headingType="h3"
     />
-    <Carousel :itemsToShow="2.5" :wrap-around="true">
-      <Slide v-for="slide in images" :key="slide">
+    <Carousel
+      :itemsToShow="4"
+      :wrap-around="true"
+      snapAlign="start"
+      autoplay="500"
+      transition="3000"
+    >
+      <Slide v-for="slide in brands" :key="slide">
         <div class="carousel__item">
-          <img :src="slide.url" :alt="slide.alt" class="w-fit grayscale" />
+          <img
+            :src="slide.url"
+            :alt="slide.alt"
+            class="grayscale w-fit h-14 object-contain"
+          />
         </div>
       </Slide>
       <template #addons>
@@ -21,25 +31,7 @@
 <script setup>
 import Heading from "~~/components/Heading.vue";
 import { Carousel, Navigation, Slide } from "vue3-carousel";
-
-const images = [
-  {
-    alt: "hdi",
-    url: "https://www.autocred.cl/images/crediticias-logos/hdi.png",
-  },
-  {
-    alt: "icar",
-    url: "https://www.autocred.cl/images/crediticias-logos/icar.png",
-  },
-  {
-    alt: "brand3",
-    url: "https://www.autocred.cl/images/crediticias-logos/autofact.png",
-  },
-  {
-    alt: "brand4",
-    url: "https://www.autocred.cl/images/landing/logo-autocred-white.png",
-  },
-];
+import { brands } from "~~/assets/helpers/constants";
 </script>
 
 <style scoped>
@@ -63,5 +55,14 @@ const images = [
 .carousel__next {
   box-sizing: content-box;
   border: 5px solid white;
+}
+
+.carousel__slide.carousel__slide--active.carousel__slide--visible {
+  transform: scale(1);
+}
+
+.carousel__slide.carousel__slide--prev,
+.carousel__slide.carousel__slide--visible {
+  transform: scale(1);
 }
 </style>
