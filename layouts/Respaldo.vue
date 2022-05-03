@@ -1,10 +1,14 @@
 <template>
   <div class="bg-slate-100 py-6 mb-10">
-    <Heading content="Con el respaldo de:" class="mb-4" />
+    <Heading
+      content="Con el respaldo de:"
+      class="mb-4 text-black-100"
+      headingType="h3"
+    />
     <Carousel :itemsToShow="2.5" :wrap-around="true">
       <Slide v-for="slide in images" :key="slide">
         <div class="carousel__item">
-          <img :src="slide.url" :alt="slide.alt" class="w-fit" />
+          <img :src="slide.url" :alt="slide.alt" class="w-fit grayscale" />
         </div>
       </Slide>
       <template #addons>
