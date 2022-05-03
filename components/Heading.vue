@@ -27,7 +27,7 @@ defineProps({
 });
 </script>
 
-<style>
+<style scoped>
 h1 {
   font-size: 50px;
 }
