@@ -7,12 +7,13 @@
         class="w-full"
       />
       <Heading1 headingType="h3" content="Un coopiloto todo terreno" />
-      <p>
+      <Paragraph class="font-medium">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
         officia, voluptatibus earum corporis illum consequuntur velit eos quam
-        voluptas aut molestiae dolorem recusandae, asperiores eius obcaecati
+        voluptas aut molestiae dolorem recusandae, asperiores eius
+        <b>obcaecati</b>
         placeat amet exercitationem vitae?
-      </p>
+      </Paragraph>
     </div>
 
     <Button1 text="Agenda tu servicio" secondary class="w-fit self-center" />
@@ -22,6 +23,7 @@
 <script setup>
 import Heading1 from "./Heading.vue";
 import Button1 from "./Button.vue";
+import Paragraph from "./Paragraph.vue";
 </script>
 
 <style lang="scss" scoped></style>

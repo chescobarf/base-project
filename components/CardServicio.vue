@@ -3,10 +3,14 @@
     <div class="grid place-content-center">
       <img :src="data.img" :alt="data.name" class="w-full" />
       <div class="content">
-        <Heading1 :content="data.name" headingType="h3" />
-        <p>
+        <Heading1
+          :content="data.name"
+          headingType="h3"
+          class="font-bold mb-3"
+        />
+        <Paragraph class="font-medium">
           {{ data.content }}
-        </p>
+        </Paragraph>
       </div>
     </div>
   </div>
@@ -14,6 +18,7 @@
 
 <script setup>
 import Heading1 from "~~/components/Heading";
+import Paragraph from "~~/components/Paragraph";
 defineProps({
   data: Object,
 });
