@@ -1,7 +1,7 @@
 <template>
   <div class="w-full">
     <div class="grid gap-4">
-      <Disclosure v-slot="{ open }" v-for="cuota in cuotasSimulacion">
+      <Disclosure v-slot="{ open }" v-for="cuota in cuotasSimulacion.data">
         <DisclosureButton
           class="focus:outline-none flex w-full justify-between rounded-lg bg-gray-400 px-4 py-2 text-left text-sm font-medium text-white hover:bg-primary-900"
         >
@@ -32,8 +32,9 @@
 <script setup>
 import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/vue";
 import { ChevronUpIcon } from "@heroicons/vue/solid";
-import {
-  camposSimulacion,
-  cuotasSimulacion,
-} from "~~/assets/helpers/constants";
+import { camposSimulacion } from "~~/assets/helpers/constants";
+
+const { data: cuotasSimulacion } = await useFetch(
+  "http://dev.autocred.cl/api/utilities/others/terms"
+);
 </script>
