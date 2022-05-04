@@ -21,6 +21,7 @@
             :key="brand.id"
             :value="brand"
             v-slot="{ selected, active }"
+            @click="changeMarca(brand)"
           >
             <li
               class="cursor-pointer select-none relative py-2 pl-10 pr-4"
@@ -68,4 +69,9 @@ const { data } = await useFetch(
   "http://dev.autocred.cl/api/utilities/vehicles/brands"
 );
 let selected = ref({ name: "Marca" });
+
+const marca = useMarca();
+const changeMarca = (value) => {
+  marca.value = value;
+};
 </script>
