@@ -25,7 +25,7 @@
               <Input placeholder="Version" />
               <SelectAnios1 />
             </div>
-            <SelectMarcas2 />
+            <SelectTypeCredito1 />
           </div>
           <div class="col-span-1 px-5 border-x grid gap-6">
             <div class="price">
@@ -61,6 +61,7 @@ import SliderRange1 from "~~/components/Slider-Range.vue";
 import Acordion1 from "~~/components/Acordion.vue";
 import SelectAnios1 from "~~/components/SelectAnios.vue";
 import TesterApi from "~~/components/TesterApi.vue";
+import SelectTypeCredito1 from "~~/components/SelectTypeCredito.vue";
 </script>
 
 <style scoped>
