@@ -48,6 +48,7 @@
       </div>
     </div>
   </div>
+  <TesterApi />
 </template>
 
 <script setup>
