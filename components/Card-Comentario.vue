@@ -1,25 +1,28 @@
 <template>
-  <div class="bg-slate-50 shadow-lg rounded-xl py-8 px-6">
+  <div class="bg-[#F9FAFB] shadow-lg rounded-xl py-8 px-12">
     <div class="flex flex-row gap-4 justify-center items-center mb-4">
       <img
         src="https://api.lorem.space/image/face?w=150&h=150"
         alt="profile"
-        class="rounded-full h-24 w-24"
+        class="rounded-full h-20 w-20"
       />
       <div>
-        <h3 class="text-primary-900 font-bold">Nombre</h3>
-        <h4 class="text-secondary-900 font-medium">@username</h4>
+        <Paragraph1 class="font-bold"> Nombre </Paragraph1>
+        <Paragraph1 class="text-secondary-900 font-medium text-base">
+          @username
+        </Paragraph1>
       </div>
     </div>
-    <p class="text-left">
+    <Paragraph1 class="font-medium text-base text-left">
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde debitis
       quisquam harum dignissimos a dolorem exercitationem neque, quia facere ad
-      provident quidem saepe nesciunt. Voluptatum modi delectus porro? Sint,
-      iusto.
-    </p>
+      provident quidem saepe nesciunt.
+    </Paragraph1>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import Paragraph1 from "./Paragraph.vue";
+</script>
 
 <style lang="scss" scoped></style>
