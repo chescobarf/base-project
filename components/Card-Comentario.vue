@@ -7,7 +7,7 @@
         class="rounded-full h-20 w-20"
       />
       <div>
-        <Paragraph1 class="font-bold"> Nombre </Paragraph1>
+        <Paragraph1 class="font-bold text-xl"> Nombre </Paragraph1>
         <Paragraph1 class="text-secondary-900 font-medium text-base">
           @username
         </Paragraph1>

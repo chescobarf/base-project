@@ -1,5 +1,5 @@
 <template>
-  <p class="text-xl text-primary-900">
+  <p class="text-primary-900">
     <slot></slot>
   </p>
 </template>

@@ -8,7 +8,7 @@
           headingType="h3"
           class="font-bold mb-3"
         />
-        <Paragraph class="font-medium">
+        <Paragraph class="font-medium text-xl">
           {{ data.content }}
         </Paragraph>
       </div>

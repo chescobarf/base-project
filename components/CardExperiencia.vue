@@ -6,7 +6,7 @@
       class="rounded-full self-center"
     />
     <Heading content="Pedro Engel" headingType="h3" secondary />
-    <Paragraph1>
+    <Paragraph1 class="font-bold text-xl">
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis ducimus
       impedit doloribus, deleniti, odit, consequatur eum dicta obcaecati
     </Paragraph1>
