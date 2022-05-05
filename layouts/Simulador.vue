@@ -19,7 +19,7 @@
             <InputRut1 placeholder="RUT" class="w-full" />
             <div class="flex">
               <SelectMarcas1 />
-              <SelectMarcas1 />
+              <SelectModelo1 />
             </div>
             <div class="flex">
               <Input placeholder="Version" />
@@ -63,6 +63,7 @@ import Acordion1 from "~~/components/Acordion.vue";
 import SelectAnios1 from "~~/components/SelectAnios.vue";
 import TesterApi from "~~/components/TesterApi.vue";
 import SelectTypeCredito1 from "~~/components/SelectTypeCredito.vue";
+import SelectModelo1 from "~~/components/SelectModelo.vue";
 </script>
 
 <style scoped>

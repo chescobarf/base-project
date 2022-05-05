@@ -71,7 +71,20 @@ const { data } = await useFetch(
 let selected = ref({ name: "Marca" });
 
 const marca = useMarca();
+const modelos = useModelos();
 const changeMarca = (value) => {
   marca.value = value;
 };
+
+onUpdated(async () => {
+  console.log("updated");
+  try {
+    const { data } = await useFetch(
+      `http://dev.autocred.cl/api/utilities/vehicles/brands/${marca.value.id}/models`
+    );
+    modelos.value = data.value.data;
+  } catch (error) {
+    console.log(error);
+  }
+});
 </script>

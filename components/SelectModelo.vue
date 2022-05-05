@@ -16,11 +16,12 @@
           class="absolute w-full py-1 mt-1 overflow-auto text-base bg-white rounded-md shadow-lg max-h-60 ring-1 ring-primary-700 focus:outline-none sm:text-sm z-10"
         >
           <ComboboxOption
-            v-for="brand in data.data"
+            v-for="model in modelos"
             as="template"
-            :key="brand.id"
-            :value="brand"
+            :key="model.id"
+            :value="model"
             v-slot="{ selected, active }"
+            @click="changeModelo(model)"
           >
             <li
               class="cursor-pointer select-none relative py-2 pl-10 pr-4"
@@ -33,7 +34,7 @@
                 class="block truncate"
                 :class="{ 'font-medium': selected, 'font-normal': !selected }"
               >
-                {{ brand.name }}
+                {{ model.name }}
               </span>
               <span
                 v-if="selected"
@@ -63,9 +64,11 @@ import {
   ComboboxOption,
 } from "@headlessui/vue";
 import { CheckIcon, SelectorIcon } from "@heroicons/vue/solid";
-// import { brandsCars } from "assets/helpers/API";
-const { data } = await useFetch(
-  "http://dev.autocred.cl/api/utilities/vehicles/brands"
-);
-let selected = ref({ name: "Marca" });
+let selected = ref({ name: "Modelo" });
+const modelos = useModelos();
+const modelo = useModelo();
+
+const changeModelo = (value) => {
+  modelo.value = value;
+};
 </script>
