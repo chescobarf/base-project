@@ -1,11 +1,12 @@
 <template>
-  <div>
+  <div class="bg-black-25 grid py-12">
     <Heading content="Pilotos que confiaron en Autocred" />
     <Carousel
       :items-to-show="3"
       :wrapAround="true"
       :itemsToScroll="1"
       :autoplay="2000"
+      class="mb-8"
     >
       <slide v-for="slide in 4" :key="slide">
         <!-- <div class="slide bg-secondary-900 shadow-md">{{ slide }}</div> -->
@@ -15,6 +16,11 @@
         <Navigation />
       </template>
     </Carousel>
+    <Button1
+      secondary
+      text="Agenda tu servicio"
+      class="justify-self-center w-fit"
+    />
   </div>
 </template>
 
@@ -23,6 +29,7 @@ import { Carousel, Slide, Navigation } from "vue3-carousel";
 import "vue3-carousel/dist/carousel.css";
 import Heading from "~~/components/Heading.vue";
 import CardComentario1 from "../components/Card-Comentario.vue";
+import Button1 from "~~/components/Button.vue";
 </script>
 
 <style>
