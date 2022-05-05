@@ -77,7 +77,6 @@ const changeMarca = (value) => {
 };
 
 onUpdated(async () => {
-  console.log("updated");
   try {
     const response = await useFetch(
       `http://dev.autocred.cl/api/utilities/vehicles/brands/${marca.value.id}/models`
