@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-slate-100 py-6 mb-10">
+  <div class="bg-slate-100 py-6 mb-24">
     <Heading
       content="Con el respaldo de:"
       class="mb-4 text-black-100"

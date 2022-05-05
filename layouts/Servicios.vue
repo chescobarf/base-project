@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-28">
+  <div class="mb-24">
     <Heading
       content="En que consisten nuestros servicios?"
       class="mb-8"

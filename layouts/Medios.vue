@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mb-24">
     <Heading content="Autocred en Medios" />
     <div class="showMore w-full text-right">
       <Heading

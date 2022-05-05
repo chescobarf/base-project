@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-4">
+  <div class="mb-24">
     <Heading1 content="Ventajas de viajar juntos" class="mb-4" />
     <div class="w-full grid grid-cols-3 gap-8 mb-20">
       <VentajaCard />

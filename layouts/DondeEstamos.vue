@@ -1,5 +1,5 @@
 <template>
-  <div class="py-6">
+  <div class="py-6 mb-24">
     <Heading1 content="Donde estamos" class="mb-8" />
     <div class="grid grid-cols-2 w-full justify-between">
       <div class="flex flex-row justify-end">

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-black-25 grid py-12">
+  <div class="bg-black-25 grid py-12 mb-24">
     <Heading content="Pilotos que confiaron en Autocred" />
     <Carousel
       :items-to-show="3"
