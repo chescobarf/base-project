@@ -57,7 +57,7 @@
             <div class="flex gap-1 items-center">
               <CheckIcon class="text-secondary-900 w-5 h-5" />
               <Paragraph class="text-lg font-bold text-secondary-900">
-                Presencial
+                Servicio 100% online
               </Paragraph>
             </div>
           </div>
