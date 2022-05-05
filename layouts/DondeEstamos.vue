@@ -29,39 +29,50 @@
           </Paragraph1>
         </ul>
         <div
-          class="flex flex-col px-6 border-r-2"
+          class="flex flex-col px-6 border-r-2 gap-2"
           v-for="(direccion, index) in direcciones"
           v-show="direccion.name == unref(activeDirection)"
           :key="index"
         >
           <div class="flex-col">
-            <Paragraph class="text-base font-bold text-secondary-900">
-              Presencial
-            </Paragraph>
-            <Paragraph class="text-sm font-medium text-primary-900">
-              {{ direccion.direccion }}
-            </Paragraph>
-            <Paragraph class="text-sm font-medium text-primary-900">
-              {{ direccion.correo }}
-            </Paragraph>
-            <Paragraph class="text-sm font-medium text-primary-900">
-              {{ direccion.telefono }}
-            </Paragraph>
+            <div class="flex gap-1 items-center">
+              <CheckIcon class="text-secondary-900 w-5 h-5" />
+              <Paragraph class="text-lg font-bold text-secondary-900">
+                Presencial
+              </Paragraph>
+            </div>
+            <div class="subcontent flex-col pl-6">
+              <Paragraph class="text-base font-medium text-primary-900">
+                {{ direccion.direccion }}
+              </Paragraph>
+              <Paragraph class="text-base font-medium text-primary-900">
+                {{ direccion.correo }}
+              </Paragraph>
+              <Paragraph class="text-base font-medium text-primary-900">
+                {{ direccion.telefono }}
+              </Paragraph>
+            </div>
           </div>
           <div class="flex-col">
-            <Heading
-              content="Servicio 100% online"
-              class="text-secondary-900"
-              headingType="h5"
-            />
+            <div class="flex gap-1 items-center">
+              <CheckIcon class="text-secondary-900 w-5 h-5" />
+              <Paragraph class="text-lg font-bold text-secondary-900">
+                Presencial
+              </Paragraph>
+            </div>
           </div>
           <div class="flex-col">
-            <Heading
-              content="Servicio Movil"
-              class="text-secondary-900"
-              headingType="h5"
-            />
-            <p>{Vamos a domicilio}</p>
+            <div class="flex gap-1 items-center">
+              <CheckIcon class="text-secondary-900 w-5 h-5" />
+              <Paragraph class="text-lg font-bold text-secondary-900">
+                Servicio Movil
+              </Paragraph>
+            </div>
+            <div class="subcontent subcontent flex-col pl-6">
+              <Paragraph class="text-base font-medium text-primary-900">
+                Vamos a domicilio
+              </Paragraph>
+            </div>
           </div>
         </div>
       </div>
@@ -77,8 +88,8 @@ import Heading1 from "~~/components/Heading.vue";
 import Map1 from "~~/components/Map.vue";
 import { ref, unref } from "vue";
 import { direcciones } from "~~/assets/helpers/API";
-import { Paragraph } from "../.nuxt/components";
 import Paragraph1 from "~~/components/Paragraph.vue";
+import { CheckIcon } from "@heroicons/vue/solid";
 const activeDirection = ref("R.Metropolitana");
 const active = (e) => {
   activeDirection.value = e.target.innerText;
