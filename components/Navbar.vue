@@ -1,6 +1,6 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-  <Popover class="bg-white fixed top-0 left-0 w-full">
+  <Popover class="bg-white fixed top-0 left-0 w-full z-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div
         class="flex justify-between items-center py-6 md:justify-start md:space-x-10"
