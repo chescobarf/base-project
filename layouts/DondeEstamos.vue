@@ -1,33 +1,52 @@
 <template>
-  <div class="bg-slate-50 py-6">
+  <div class="py-6">
     <Heading1 content="Donde estamos" class="mb-8" />
     <div class="grid grid-cols-2 w-full justify-between">
       <div class="flex flex-row justify-end">
         <ul class="flex flex-col gap-2 px-6 border-r-2">
-          <Heading
+          <!-- <Heading
             v-for="(direccion, index) in direcciones"
             :key="index"
             :content="direccion.name"
             headingType="h5"
-            class="cursor-pointer"
-            :class="{ active: activeDirection == direccion.name }"
-            @click="sayHello"
-          />
+            class="cursor-pointer text-primary-700"
+            :class="{
+              'text-secondary-900': activeDirection == direccion.name,
+            }"
+            @click="active"
+          /> -->
+          <Paragraph1
+            v-for="(direccion, index) in direcciones"
+            :key="index"
+            class="cursor-pointer text-lg"
+            :class="{
+              'text-secondary-900 font-bold': activeDirection == direccion.name,
+              'text-primary-700 font-medium': activeDirection != direccion.name,
+            }"
+            @click="active"
+          >
+            {{ direccion.name }}
+          </Paragraph1>
         </ul>
         <div
           class="flex flex-col px-6 border-r-2"
           v-for="(direccion, index) in direcciones"
           v-show="direccion.name == unref(activeDirection)"
+          :key="index"
         >
           <div class="flex-col">
-            <Heading
-              content="Presencial"
-              class="text-secondary-900"
-              headingType="h5"
-            />
-            <p>{{ direccion.direccion }}</p>
-            <p>{{ direccion.correo }}</p>
-            <p>{{ direccion.telefono }}</p>
+            <Paragraph class="text-base font-bold text-secondary-900">
+              Presencial
+            </Paragraph>
+            <Paragraph class="text-sm font-medium text-primary-900">
+              {{ direccion.direccion }}
+            </Paragraph>
+            <Paragraph class="text-sm font-medium text-primary-900">
+              {{ direccion.correo }}
+            </Paragraph>
+            <Paragraph class="text-sm font-medium text-primary-900">
+              {{ direccion.telefono }}
+            </Paragraph>
           </div>
           <div class="flex-col">
             <Heading
@@ -58,9 +77,10 @@ import Heading1 from "~~/components/Heading.vue";
 import Map1 from "~~/components/Map.vue";
 import { ref, unref } from "vue";
 import { direcciones } from "~~/assets/helpers/API";
+import { Paragraph } from "../.nuxt/components";
+import Paragraph1 from "~~/components/Paragraph.vue";
 const activeDirection = ref("R.Metropolitana");
-const sayHello = (e) => {
-  console.log(e.target.innerText);
+const active = (e) => {
   activeDirection.value = e.target.innerText;
 };
 </script>
