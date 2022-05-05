@@ -48,7 +48,6 @@
       </div>
     </div>
   </div>
-  <TesterApi />
 </template>
 
 <script setup>
@@ -56,12 +55,10 @@ import Heading1 from "~~/components/Heading.vue";
 import InputRut1 from "~~/components/Input-Rut.vue";
 import SelectMarcas1 from "~~/components/SelectMarcas.vue";
 import Input from "~~/components/Form/Input.vue";
-import SelectMarcas2 from "~~/components/SelectMarcas.vue";
 import Button1 from "~~/components/Button.vue";
 import SliderRange1 from "~~/components/Slider-Range.vue";
 import Acordion1 from "~~/components/Acordion.vue";
 import SelectAnios1 from "~~/components/SelectAnios.vue";
-import TesterApi from "~~/components/TesterApi.vue";
 import SelectTypeCredito1 from "~~/components/SelectTypeCredito.vue";
 import SelectModelo1 from "~~/components/SelectModelo.vue";
 </script>

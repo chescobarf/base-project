@@ -64,7 +64,7 @@ import {
   ComboboxOption,
 } from "@headlessui/vue";
 import { CheckIcon, SelectorIcon } from "@heroicons/vue/solid";
-// import { brandsCars } from "assets/helpers/API";
+
 const { data } = await useFetch(
   "http://dev.autocred.cl/api/utilities/vehicles/brands"
 );
@@ -79,10 +79,10 @@ const changeMarca = (value) => {
 onUpdated(async () => {
   console.log("updated");
   try {
-    const { data } = await useFetch(
+    const response = await useFetch(
       `http://dev.autocred.cl/api/utilities/vehicles/brands/${marca.value.id}/models`
     );
-    modelos.value = data.value.data;
+    modelos.value = response.data.value.data;
   } catch (error) {
     console.log(error);
   }
