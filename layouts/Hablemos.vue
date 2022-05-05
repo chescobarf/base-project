@@ -1,15 +1,15 @@
 <template>
   <div class="bg-gray-100 py-12 px-12 mb-12">
     <Heading1 content="Hablemos" />
-    <div class="grid">
-      <div class="bg-white rounded-xl card px-6 py-7">
-        <Heading content="Formulario" headingType="h4" class="border-b pb-4" />
-        <Input
-          placeholder="Ingresa tu nombre completo"
-          label="Nombre"
-          id="name"
-        />
-        <div class="flex flex-row w-full justify-between">
+    <div class="bg-white rounded-xl card px-6 py-7">
+      <Heading content="Formulario" headingType="h4" class="border-b pb-4" />
+      <div class="grid grid-cols-2">
+        <div class="left pr-8 border-r">
+          <Input
+            placeholder="Ingresa tu nombre completo"
+            label="Nombre"
+            id="name"
+          />
           <InputEmail
             placeholder="Ingresa tu correo de contacto"
             label="Correo Electronico"
@@ -22,13 +22,18 @@
             isPhone
           />
         </div>
-        <SelectServicios label="Que servicios necesitas?" class="w-full" />
-        <TextArea1 label="Como te podemos ayudar?" id="textarea" />
-        <div class="flex justify-end">
-          <ButtonVue text="Enviar" outlinePrimary />
+        <div class="right pl-8">
+          <SelectServicios label="Que servicios necesitas?" class="w-full" />
+          <SelectServicios label="Que servicios necesitas?" class="w-full" />
+
+          <TextArea1 label="Como te podemos ayudar?" id="textarea" />
+          <div class="flex justify-end">
+            <ButtonVue text="Enviar" outlinePrimary />
+          </div>
         </div>
       </div>
-      <div class="bg-white rounded-xl px-6 py-7">
+    </div>
+    <!-- <div class="bg-white rounded-xl px-6 py-7">
         <Heading
           content="Informacion de contacto"
           headingType="h4"
@@ -42,8 +47,7 @@
         <div class="h-96">
           <Map />
         </div>
-      </div>
-    </div>
+      </div> -->
   </div>
 </template>
 
@@ -58,9 +62,4 @@ import { direcciones } from "~~/assets/helpers/API";
 import ButtonVue from "~~/components/Button.vue";
 </script>
 
-<style scoped>
-.grid {
-  grid-template-columns: 0.8fr auto;
-  gap: 2rem;
-}
-</style>
+<style scoped></style>

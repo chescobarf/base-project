@@ -4,7 +4,7 @@
     <Combobox v-model="selected">
       <div class="relative">
         <ComboboxInput
-          class="w-full border py-1 px-2 leading-5 focus-visible:outline-primary-700 rounded"
+          class="w-full border py-1 px-2 focus-visible:outline-primary-700 rounded"
           :displayValue="(brand) => brand.name"
           @change="query = $event.target.value"
         />
