@@ -1,7 +1,7 @@
 <template>
   <div class="grid gap-12 w-full">
     <!-- <Noticia :data="campo" v-for="campo in data" /> -->
-    <Noticia />
+    <Noticia highlight />
     <Noticia />
     <Noticia />
   </div>
