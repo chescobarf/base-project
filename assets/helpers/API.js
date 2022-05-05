@@ -31,3 +31,20 @@ export const servicios = [
     { id: 4, name: "Tag" },
 
 ];
+
+
+export const BASE_URL = "http://dev.autocred.cl/api/"
+export const LOGIN_URL = BASE_URL + "auth/login"
+export const CONTACT_URL = BASE_URL + "utilities/contacts/form"
+export const MARCAS_URL = BASE_URL + "utilities/vehicles/brands"
+export const CONDICIONES_URL = BASE_URL + "utilities/vehicles/conditions"
+export const ANIOS_VEHICULOS_URL = BASE_URL + "utilities/others/years"
+export const CUOTAS_URL = BASE_URL + "utilities/others/terms"
+export const COLORS_URL = BASE_URL + "utilities/others/colors"
+export const NACIONALIDAD_URL = BASE_URL + "utilities/others/nationalities"
+export const RESIDENCIA_URL = BASE_URL + "utilities/others/residenceTypes"
+export const CONTRATO_URL = BASE_URL + "utilities/others/employeeTypes"
+export const PLAZO_CONTRATO_URL = BASE_URL + "utilities/others/contractTypes"
+export const SERVICIOS_URL = BASE_URL + "utilities/others/services"
+
+
