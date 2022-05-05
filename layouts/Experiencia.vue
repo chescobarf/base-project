@@ -1,5 +1,5 @@
 <template>
-  <div class="grid gap-12 justify-between">
+  <div class="grid gap-12 justify-between mb-24">
     <CardExperiencia1 />
     <Video src="/assets/video/lorem.mp4" height="100%" controls />
   </div>
