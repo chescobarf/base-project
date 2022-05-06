@@ -14,7 +14,8 @@
         </Paragraph1>
         <Button1
           text="Mas informacion"
-          outlineSecondary
+          :outlineSecondary="elementActive != item.toLowerCase()"
+          :secondary="elementActive == item.toLowerCase()"
           class="w-full"
           @click="active(item)"
         />
@@ -63,11 +64,9 @@ const { data } = await useFetch(
 const elementActive = ref(
   isObjEmpty(route.query) ? "" : Object.keys(route.query)[0].toLowerCase()
 );
-
 const active = (element) => {
   elementActive.value = element.toLowerCase();
 };
-console.log(route.query);
 </script>
 
 <style lang="scss" scoped></style>
