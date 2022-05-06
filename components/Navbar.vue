@@ -205,7 +205,9 @@
           </Popover> -->
         </PopoverGroup>
         <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-          <Button1 text="Ingresar" outlinePrimary user class="text-lg" />
+          <NuxtLink to="/login">
+            <Button1 text="Ingresar" outlinePrimary user class="text-lg" />
+          </NuxtLink>
         </div>
       </div>
     </div>
