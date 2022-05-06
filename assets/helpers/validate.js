@@ -3,3 +3,10 @@ export const validateEmail = (email) => {
     const validate = regex.test(email);
     return validate;
 };
+
+export function isObjEmpty(obj) {
+    for (var prop in obj) {
+        if (obj.hasOwnProperty(prop)) return false;
+    }
+    return true;
+}
