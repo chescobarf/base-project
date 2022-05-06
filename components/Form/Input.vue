@@ -6,7 +6,7 @@
     <span v-show="hover" class="block absolute top-0 right-0 text-black-100">{{
       hoverText
     }}</span> -->
-    <label :for="id">{{ label }}</label>
+    <label :for="id" class="text-primary-900">{{ label }}</label>
     <div v-if="isPhone" class="grid w-full items-center">
       <label
         class="phone border border-solid px-2 py-1 rounded text-primary-900"
@@ -26,6 +26,19 @@
         :id="id"
       />
     </div>
+    <input
+      v-if="password"
+      type="password"
+      :placeholder="placeholder"
+      class="px-2 py-1 border border-solid focus-visible:outline-primary-700 rounded w-full"
+      @mouseover="hover = true"
+      @mouseleave="hover = false"
+      @focusin="focus = true"
+      @focusout="focus = false"
+      :id="id"
+      :value="value"
+      :disabled="disabled"
+    />
     <input
       v-else
       type="text"
@@ -52,6 +65,7 @@ defineProps({
   isPhone: Boolean,
   value: String,
   disabled: Boolean,
+  password: Boolean,
 });
 const hover = ref(false);
 let focus = ref(false);

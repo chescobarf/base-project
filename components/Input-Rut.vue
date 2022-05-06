@@ -6,6 +6,7 @@
     <span v-show="hover" class="block absolute top-0 right-0 text-black-100">{{
       hoverText
     }}</span>
+    <label :for="id" v-if="label" class="text-primary-900">{{ label }}</label>
     <input
       required
       class="px-2 py-1 border border-solid focus-visible:outline-primary-700 rounded-md w-full"
@@ -16,6 +17,7 @@
       @mouseover="hover = true"
       @mouseleave="hover = false"
       @focusout="format"
+      :id="id"
     />
     <span class="text-red-600 block">{{ validated }}</span>
   </div>
@@ -27,6 +29,8 @@ import { validateRut, RutFormat, formatRut } from "@fdograph/rut-utilities";
 defineProps({
   placeholder: String,
   hoverText: String,
+  id: String,
+  label: String,
 });
 let rut = ref("");
 let focus = ref(false);
