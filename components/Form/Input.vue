@@ -27,7 +27,7 @@
       />
     </div>
     <input
-      v-if="password"
+      v-else-if="password"
       type="password"
       :placeholder="placeholder"
       class="px-2 py-1 border border-solid focus-visible:outline-primary-700 rounded w-full"
