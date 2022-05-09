@@ -19,11 +19,10 @@ useHead({
       content:
         "Autocred lo hace fácil. Postula simultáneamente tu crédito con diferentes crediticias y obtén una aprobación en segundos",
     },
-    //TODO: Descomentar con el paso a produccion.
-    // {
-    //   "http-equiv": "Content-Security-Policy",
-    //   content: "upgrade-insecure-requests",
-    // },
+    {
+      "http-equiv": "Content-Security-Policy",
+      content: "upgrade-insecure-requests",
+    },
   ],
 });
 </script>
