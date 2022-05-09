@@ -29,16 +29,16 @@ defineProps({
 
 <style scoped>
 h1 {
-  font-size: 50px;
+  font-size: 45px;
 }
 h2 {
-  font-size: 48px;
+  font-size: 35px;
 }
 h3 {
-  font-size: 26px;
+  font-size: 24px;
 }
 h4 {
-  font-size: larger;
+  font-size: 22px;
 }
 h5 {
   font-size: large;
