@@ -6,10 +6,12 @@
     <span v-show="hover" class="block absolute top-0 right-0 text-black-100">{{
       hoverText
     }}</span> -->
-    <label :for="id" class="text-primary-900">{{ label }}</label>
+    <label :for="id" class="text-primary-900 font-medium text-base">{{
+      label
+    }}</label>
     <div v-if="isPhone" class="grid w-full items-center">
       <label
-        class="phone border border-solid px-2 py-1 rounded text-primary-900"
+        class="phone border border-solid px-2 py-2 rounded-lg text-primary-900"
         :for="id"
       >
         +56 9</label
@@ -18,7 +20,7 @@
         type="tel"
         maxlength="8"
         :placeholder="placeholder"
-        class="px-2 py-1 border border-solid focus-visible:outline-primary-700 rounded phone-input"
+        class="px-4 py-2 border border-solid focus-visible:outline-primary-700 rounded-lg w-full phone-input"
         @mouseover="hover = true"
         @mouseleave="hover = false"
         @focusin="focus = true"
@@ -30,7 +32,7 @@
       v-else-if="password"
       type="password"
       :placeholder="placeholder"
-      class="px-2 py-1 border border-solid focus-visible:outline-primary-700 rounded w-full"
+      class="px-4 py-2 border border-solid focus-visible:outline-primary-700 rounded-lg w-full"
       @mouseover="hover = true"
       @mouseleave="hover = false"
       @focusin="focus = true"
@@ -43,7 +45,7 @@
       v-else
       type="text"
       :placeholder="placeholder"
-      class="px-2 py-1 border border-solid focus-visible:outline-primary-700 rounded w-full"
+      class="px-4 py-2 border border-solid focus-visible:outline-primary-700 rounded-lg w-full"
       @mouseover="hover = true"
       @mouseleave="hover = false"
       @focusin="focus = true"
