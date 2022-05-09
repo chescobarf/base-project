@@ -1,11 +1,11 @@
 <template>
-  <div class="bg-black-25 grid py-12 mb-24">
-    <Heading content="Pilotos que confiaron en Autocred" />
+  <div class="bg-black-25 grid py-12 mb-24 px-8">
+    <Heading content="Pilotos que confiaron en Autocred" class="mb-16" />
     <Carousel
       :items-to-show="3"
       :wrapAround="true"
       :itemsToScroll="1"
-      :autoplay="2000"
+      :autoplay="3000"
       class="mb-8"
     >
       <slide v-for="slide in 4" :key="slide">
