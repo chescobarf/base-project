@@ -3,7 +3,7 @@
     <Combobox v-model="selected">
       <div class="relative">
         <ComboboxInput
-          class="w-full border py-1 px-2 focus-visible:outline-primary-700 rounded"
+          class="px-4 py-2 border border-solid focus-visible:outline-primary-700 rounded-lg w-full"
           :displayValue="(anio) => anio"
           @change="query = $event.target.value"
         />
@@ -40,7 +40,7 @@
                 class="cursor-pointer select-none relative py-2 pl-10 pr-4"
                 :class="{
                   'text-white bg-primary-900': active,
-                  'text-gray-900': !active,
+                  'text-primary-900': !active,
                 }"
               >
                 <span
