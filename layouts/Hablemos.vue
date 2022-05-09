@@ -1,8 +1,8 @@
 <template>
   <div class="bg-gray-100 py-12 px-12 mb-12">
-    <Heading1 content="Hablemos" />
+    <Heading1 content="Hablemos" class="mb-12" />
     <div class="bg-white rounded-xl card px-6 py-7">
-      <Heading content="Formulario" headingType="h4" class="border-b pb-4" />
+      <Heading content="Formulario" headingType="h3" class="border-b pb-4" />
       <div class="grid grid-cols-2">
         <div class="left pr-8 border-r">
           <Input

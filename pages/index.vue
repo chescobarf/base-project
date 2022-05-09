@@ -9,13 +9,13 @@
         />
         <Heading
           content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
-          headingType="h3"
+          headingType="h4"
           class="mb-5"
         />
         <div>
           <Heading
             content="En que viaje te guiamos?"
-            headingType="h3"
+            headingType="h4"
             class="mb-3"
           />
           <div class="flex flex-row gap-4">

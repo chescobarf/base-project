@@ -6,7 +6,7 @@
     </Paragraph>
     <Heading
       content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aspernatur optio quas modi assumenda in"
-      :headingType="highlight ? 'h3' : 'h4'"
+      :headingType="highlight ? 'h3' : 'h5'"
     />
     <Button text="Ver mas" class="w-min" secondary />
   </div>

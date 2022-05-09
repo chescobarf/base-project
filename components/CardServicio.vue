@@ -5,10 +5,10 @@
       <div class="content">
         <Heading1
           :content="data.name"
-          headingType="h3"
+          headingType="h4"
           class="font-bold mb-3"
         />
-        <Paragraph class="font-medium text-xl">
+        <Paragraph class="font-medium text-base">
           {{ data.content }}
         </Paragraph>
       </div>

@@ -7,7 +7,7 @@
         class="w-full"
       />
       <Heading1 headingType="h3" content="Un coopiloto todo terreno" />
-      <Paragraph class="font-medium text-xl">
+      <Paragraph class="font-medium text-base">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
         officia, voluptatibus earum corporis illum consequuntur velit eos quam
         voluptas aut molestiae dolorem recusandae, asperiores eius

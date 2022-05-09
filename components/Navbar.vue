@@ -27,7 +27,7 @@
           <NuxtLink
             v-for="link in links"
             :key="link"
-            class="text-lg font-medium text-primary-700 hover:text-primary-900 hover:cursor-pointer hover:font-semibold"
+            class="text-base font-medium text-primary-700 hover:text-primary-900 hover:cursor-pointer hover:font-semibold"
             :href="link.url"
             activeClass="activeMenu"
           >
@@ -415,6 +415,10 @@ const recentPosts = [
 <style>
 .activeMenu {
   color: #ba0b7c !important;
+  font-weight: 700;
+  font-size: 18px;
+}
+.activeMenu:hover {
   font-weight: 700;
 }
 </style>
