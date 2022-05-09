@@ -1,6 +1,6 @@
 <template>
   <div class="relative py-6 w-full">
-    <label :for="id">{{ label }}</label>
+    <label :for="id" class="text-primary-900">{{ label }}</label>
     <!-- <span v-show="focus" class="absolute top-0 left-0 text-sm">
       {{ placeholder }}
     </span>
