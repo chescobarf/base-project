@@ -34,9 +34,7 @@
 import axios from "axios";
 import { ref, onMounted } from "vue";
 
-const marcas = await useFetch(
-  "http://dev.autocred.cl/api/utilities/vehicles/brands"
-);
+const marcas = await useFetch("https://fakerapi.it/api/v1/books?_quantity=4");
 // const anios = await useFetch(
 //   "http://dev.autocred.cl/api/utilities/others/years"
 // );
@@ -68,9 +66,7 @@ const marcasAxios = ref([]);
 
 onMounted(async () => {
   try {
-    const marcas = await fetch(
-      "http://dev.autocred.cl/api/utilities/vehicles/brands"
-    );
+    const marcas = await fetch("https://fakerapi.it/api/v1/books?_quantity=4");
     marcasFetch.value = await marcas.json();
   } catch (error) {
     console.log(error);
@@ -79,7 +75,7 @@ onMounted(async () => {
 
 const axiosGet = () => {
   axios
-    .get("http://dev.autocred.cl/api/utilities/vehicles/brands")
+    .get("https://fakerapi.it/api/v1/books?_quantity=4")
     .then(function (response) {
       marcasAxios.value = response;
     })
