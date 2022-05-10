@@ -16,11 +16,13 @@
     </div>
     <div class="grid items-center gap-4">
       <Paragraph> Aun no tienes tu cuenta en Autocred?</Paragraph>
-      <Button1
-        text="Crear Cuenta"
-        outlineSecondary
-        class="justify-self-center w-fit"
-      />
+      <NuxtLink to="/registro" class="justify-self-center w-fit">
+        <Button1
+          text="Crear Cuenta"
+          outlineSecondary
+          class="justify-self-center w-fit"
+        />
+      </NuxtLink>
     </div>
   </div>
 </template>
