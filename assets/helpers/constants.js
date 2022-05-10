@@ -185,3 +185,11 @@ export const dataServicios = [
     { id: 'tag', title: "Servicio Tag", content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur earum amet dolore cumque iste ex, esse enim harum officiis odit ratione laboriosam alias magni iusto quae adipisci iure sapiente recusandae?", img: "https://picsum.photos/550/370", buttonText: "Quiero mi copiloto" },
     { id: 'seguro', title: "Servicio de seguro automotriz", content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur earum amet dolore cumque iste ex, esse enim harum officiis odit ratione laboriosam alias magni iusto quae adipisci iure sapiente recusandae?", img: "https://picsum.photos/550/370", buttonText: "Quiero mi copiloto" }
 ]
+
+export const comentarios = [
+    { nombre: "Juan Ipsum", username: "username", comentario: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde debitis quisquam harum dignissimos a dolorem exercitationem neque, quia facere ad provident quidem saepe nesciunt", src: "/_nuxt/assets/img/referencia-usuarios-01.jpg" },
+    { nombre: "Juan Ipsum", username: "username", comentario: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde debitis quisquam harum dignissimos a dolorem exercitationem neque, quia facere ad provident quidem saepe nesciunt", src: "/_nuxt/assets/img/referencia-usuarios-02.jpg" },
+    { nombre: "Juan Ipsum", username: "username", comentario: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde debitis quisquam harum dignissimos a dolorem exercitationem neque, quia facere ad provident quidem saepe nesciunt", src: "/_nuxt/assets/img/referencia-usuarios-03.jpg" },
+    { nombre: "Juan Ipsum", username: "username", comentario: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde debitis quisquam harum dignissimos a dolorem exercitationem neque, quia facere ad provident quidem saepe nesciunt", src: "/_nuxt/assets/img/referencia-usuarios-02.jpg" },
+
+]
