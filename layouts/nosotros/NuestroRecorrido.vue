@@ -42,6 +42,6 @@ import Heading1 from "~~/components/Heading.vue";
 }
 .pattern {
   padding: 0 0 4rem 0;
-  background-image: url("https://thumbs.dreamstime.com/b/light-grey-network-web-texture-seamless-pattern-great-space-inspired-wallpaper-backgrounds-invitations-packaging-design-132890319.jpg");
+  /* background-image: url("https://thumbs.dreamstime.com/b/light-grey-network-web-texture-seamless-pattern-great-space-inspired-wallpaper-backgrounds-invitations-packaging-design-132890319.jpg"); */
 }
 </style>

@@ -16,11 +16,20 @@
         <Navigation />
       </template>
     </Carousel>
-    <Button1
-      secondary
-      text="Agenda tu servicio"
-      class="justify-self-center w-fit"
-    />
+    <a href="#contacto" class="justify-self-center w-fit">
+      <Button1
+        v-if="compradores"
+        primary
+        text="Agenda tu servicio"
+        class="justify-self-center w-fit"
+      />
+      <Button1
+        v-else
+        secondary
+        text="Agenda tu servicio"
+        class="justify-self-center w-fit"
+      />
+    </a>
   </div>
 </template>
 
@@ -30,6 +39,9 @@ import "vue3-carousel/dist/carousel.css";
 import Heading from "~~/components/Heading.vue";
 import CardComentario1 from "../components/Card-Comentario.vue";
 import Button1 from "~~/components/Button.vue";
+defineProps({
+  compradores: Boolean,
+});
 </script>
 
 <style>

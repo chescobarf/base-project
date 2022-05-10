@@ -2,7 +2,13 @@
   <div class="mb-28 grid">
     <Heading content="Servicio para vendedores" class="mb-8" />
     <ServiciosList :data="serviciosVendores" right class="mb-20" />
-    <ButtonVue text="Contactanos" class="justify-self-center w-fit" secondary />
+    <a href="#contacto" class="justify-self-center">
+      <ButtonVue
+        text="Contactanos"
+        class="justify-self-center w-fit"
+        secondary
+      />
+    </a>
   </div>
 </template>
 

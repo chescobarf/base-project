@@ -19,8 +19,12 @@
             class="mb-3"
           />
           <div class="flex flex-row gap-4">
-            <Button text="Quiero vender" secondary />
-            <Button text="Quiero comprar" outlinePrimary />
+            <NuxtLink to="/vendedores">
+              <Button text="Quiero vender" secondary />
+            </NuxtLink>
+            <NuxtLink to="/compradores">
+              <Button text="Quiero comprar" outlinePrimary />
+            </NuxtLink>
           </div>
         </div>
       </template>
@@ -41,6 +45,7 @@
     <Comentarios />
     <DondeEstamos />
     <Medios />
+    <div id="contacto"></div>
     <Hablemos />
   </Container>
 </template>
@@ -58,6 +63,7 @@ import DondeEstamos from "~~/layouts/DondeEstamos.vue";
 import Medios from "~~/layouts/Medios.vue";
 import Hablemos from "~~/layouts/Hablemos.vue";
 import Experiencia from "~~/layouts/Experiencia.vue";
+import { NuxtLink } from "../.nuxt/components";
 </script>
 
 <style scoped></style>

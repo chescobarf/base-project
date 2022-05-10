@@ -1,9 +1,9 @@
 <template>
   <div class="flex gap-4 flex-col">
     <img
-      src="https://api.lorem.space/image/face?w=100&h=100"
+      src="~~/assets/img/Pedro.jpg"
       alt=""
-      class="rounded-full self-center"
+      class="w-40 h-40 rounded-full self-center object-cover"
     />
     <Heading content="Pedro Engel" headingType="h3" secondary />
     <Paragraph1 class="font-bold text-base">
@@ -22,8 +22,4 @@ defineProps({
 });
 </script>
 
-<style scoped>
-img {
-  width: 150px;
-}
-</style>
+<style scoped></style>

@@ -1,15 +1,13 @@
 <template>
   <div class="mb-24">
     <Heading content="Autocred en Medios" />
-    <div class="showMore w-full flex justify-end items-center gap-2 mb-6">
+    <NuxtLink
+      class="showMore w-full flex justify-end items-center gap-2 mb-6"
+      to="/blog"
+    >
       <img src="~~/assets/img/flecha-medios.svg" alt="" class="h-6 w-fit" />
-      <Heading
-        content="Ver todas las apariciones"
-        headingType="h5"
-        secondary
-        class="cursor-pointer"
-      />
-    </div>
+      <Heading content="Ver todas las apariciones" headingType="h5" secondary />
+    </NuxtLink>
     <GridNoticias />
   </div>
 </template>

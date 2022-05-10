@@ -12,11 +12,11 @@
           headingType="h4"
           class="mb-5"
         />
-        <div>
+        <a href="#contacto">
           <div class="flex flex-row gap-4">
             <Button text="Contactanos" primary />
           </div>
-        </div>
+        </a>
       </template>
       <template #image>
         <div class="grid place-content-center">
@@ -31,7 +31,8 @@
     <ServiciosCompradores />
     <Features />
     <Simulador />
-    <Comentarios />
+    <Comentarios compradores />
+    <div id="contacto"></div>
     <Hablemos />
   </Container>
 </template>

@@ -9,8 +9,8 @@
       :itemsToShow="4"
       :wrap-around="true"
       snapAlign="start"
-      autoplay="500"
-      transition="3000"
+      :autoplay="500"
+      :transition="3000"
     >
       <Slide v-for="slide in brands" :key="slide">
         <div class="carousel__item">
