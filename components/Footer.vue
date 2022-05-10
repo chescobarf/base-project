@@ -65,10 +65,7 @@
     </div>
   </Container>
   <div class="bg-primary-900 grid place-content-center py-6">
-    <img
-      src="https://www.autocred.cl/images/landing/logo-autocred-white.png"
-      alt=""
-    />
+    <img src="~~/assets/img/logo-autocred-footer.svg" alt="" />
   </div>
 </template>
 
