@@ -10,7 +10,7 @@
             <span class="sr-only">Autocred</span>
             <img
               class="h-8 w-auto sm:h-10"
-              src="~/assets/img/autocred2.png"
+              src="~/assets/img/logo-autocred-menu.svg"
               alt=""
             />
           </NuxtLink>
