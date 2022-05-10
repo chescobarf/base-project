@@ -50,17 +50,19 @@
         </div>
       </div>
       <div class="redes border-r-2 px-12 pt-5">
-        <Heading content="Redes Sociales" headingType="h5" />
-        <p
-          class="text-base font-medium text-gray-500 hover:text-secondary-800 hover:cursor-pointer"
-        >
-          Facebook AutocredChile
-        </p>
-        <p
-          class="text-base font-medium text-gray-500 hover:text-secondary-800 hover:cursor-pointer"
-        >
-          Instagram autocredchile
-        </p>
+        <Heading content="Redes Sociales" headingType="h5" class="mb-2" />
+        <div class="flex flex-col gap-2">
+          <NuxtLink v-for="red in rrss" :to="red.url">
+            <div class="flex flex-row gap-2 items-center">
+              <img :src="red.src" alt="" class="w-5 h-5" />
+              <p
+                class="text-base font-medium text-gray-500 hover:text-secondary-800 hover:cursor-pointer capitalize"
+              >
+                {{ red.name }}
+              </p>
+            </div>
+          </NuxtLink>
+        </div>
       </div>
     </div>
   </Container>
@@ -71,7 +73,7 @@
 
 <script setup>
 import Heading from "~~/components/Heading.vue";
-import { links } from "~~/assets/helpers/constants";
+import { links, rrss } from "~~/assets/helpers/constants";
 import Container from "~~/layouts/Container.vue";
 import { direcciones } from "~~/assets/helpers/API";
 </script>
