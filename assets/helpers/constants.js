@@ -187,9 +187,9 @@ export const dataServicios = [
 ]
 
 export const comentarios = [
-    { nombre: "Juan Ipsum", username: "username", comentario: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde debitis quisquam harum dignissimos a dolorem exercitationem neque, quia facere ad provident quidem saepe nesciunt", src: "~~/assets/img/referencia-usuarios-01.jpg" },
-    { nombre: "Juan Ipsum", username: "username", comentario: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde debitis quisquam harum dignissimos a dolorem exercitationem neque, quia facere ad provident quidem saepe nesciunt", src: "~~/assets/img/referencia-usuarios-02.jpg" },
-    { nombre: "Juan Ipsum", username: "username", comentario: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde debitis quisquam harum dignissimos a dolorem exercitationem neque, quia facere ad provident quidem saepe nesciunt", src: "~~/assets/img/referencia-usuarios-03.jpg" },
-    { nombre: "Juan Ipsum", username: "username", comentario: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde debitis quisquam harum dignissimos a dolorem exercitationem neque, quia facere ad provident quidem saepe nesciunt", src: "~~/assets/img/referencia-usuarios-02.jpg" },
+    { nombre: "Juan Ipsum", username: "username", comentario: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde debitis quisquam harum dignissimos a dolorem exercitationem neque, quia facere ad provident quidem saepe nesciunt", src: "/img/referencia-usuarios-01.jpg" },
+    { nombre: "Juan Ipsum", username: "username", comentario: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde debitis quisquam harum dignissimos a dolorem exercitationem neque, quia facere ad provident quidem saepe nesciunt", src: "/img/referencia-usuarios-02.jpg" },
+    { nombre: "Juan Ipsum", username: "username", comentario: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde debitis quisquam harum dignissimos a dolorem exercitationem neque, quia facere ad provident quidem saepe nesciunt", src: "/img/referencia-usuarios-03.jpg" },
+    { nombre: "Juan Ipsum", username: "username", comentario: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde debitis quisquam harum dignissimos a dolorem exercitationem neque, quia facere ad provident quidem saepe nesciunt", src: "/img/referencia-usuarios-02.jpg" },
 
 ]
