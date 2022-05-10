@@ -29,9 +29,13 @@ export const servicios = [
     { id: 2, name: "Financiamientos" },
     { id: 3, name: "Seguro" },
     { id: 4, name: "Tag" },
-
 ];
 
+export const gestion = [
+    { id: 1, name: "Modulo presencial" },
+    { id: 2, name: "Van - Oficina Movil" },
+    { id: 3, name: "Ejecutivo Online" },
+]
 
 export const BASE_URL = "http://dev.autocred.cl/api/"
 export const LOGIN_URL = BASE_URL + "auth/login"

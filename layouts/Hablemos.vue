@@ -24,7 +24,10 @@
         </div>
         <div class="right pl-8">
           <SelectServicios label="Que servicios necesitas?" class="w-full" />
-          <SelectServicios label="Que servicios necesitas?" class="w-full" />
+          <SelectGestion
+            label="Como quieres que gestionemos tu servicio?"
+            class="w-full"
+          />
 
           <TextArea1 label="Como te podemos ayudar?" id="textarea" />
           <div class="flex justify-end">
@@ -33,21 +36,6 @@
         </div>
       </div>
     </div>
-    <!-- <div class="bg-white rounded-xl px-6 py-7">
-        <Heading
-          content="Informacion de contacto"
-          headingType="h4"
-          class="border-b pb-4 mb-4"
-        />
-        <div class="border-b pb-4 mb-4">
-          <Heading :content="direcciones[0].direccion" headingType="h5" />
-          <Heading :content="direcciones[0].correo" headingType="h5" />
-          <Heading :content="direcciones[0].telefono" headingType="h5" />
-        </div>
-        <div class="h-96">
-          <Map />
-        </div>
-      </div> -->
   </div>
 </template>
 
@@ -57,9 +45,9 @@ import Input from "~~/components/Form/Input.vue";
 import InputEmail from "~~/components/Input-Email.vue";
 import SelectServicios from "~~/components/SelectServicios.vue";
 import TextArea1 from "~~/components/TextArea.vue";
-import Map from "~~/components/Map.vue";
-import { direcciones } from "~~/assets/helpers/API";
+
 import ButtonVue from "~~/components/Button.vue";
+import SelectGestion from "~~/components/SelectGestion.vue";
 </script>
 
 <style scoped></style>
