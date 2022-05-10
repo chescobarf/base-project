@@ -8,9 +8,8 @@
       :autoplay="3000"
       class="mb-8"
     >
-      <slide v-for="slide in 4" :key="slide">
-        <!-- <div class="slide bg-secondary-900 shadow-md">{{ slide }}</div> -->
-        <CardComentario1 />
+      <slide v-for="slide in comentarios" :key="slide">
+        <CardComentario1 :data="slide" />
       </slide>
       <template #addons>
         <Navigation />
@@ -39,6 +38,8 @@ import "vue3-carousel/dist/carousel.css";
 import Heading from "~~/components/Heading.vue";
 import CardComentario1 from "../components/Card-Comentario.vue";
 import Button1 from "~~/components/Button.vue";
+import { comentarios } from "~~/assets/helpers/constants";
+
 defineProps({
   compradores: Boolean,
 });
