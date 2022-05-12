@@ -231,7 +231,7 @@
               <div>
                 <img
                   class="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                  src="/assets/img/autocred.png"
                   alt="Workflow"
                 />
               </div>
