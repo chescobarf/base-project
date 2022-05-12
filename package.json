@@ -7,7 +7,7 @@
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^5.0.2",
-    "nuxt": "^3.0.0-rc.1"
+    "nuxt": "npm:nuxt3@latest"
   },
   "dependencies": {
     "@fawmi/vue-google-maps": "^0.9.67",
@@ -18,5 +18,8 @@
     "axios": "^0.26.1",
     "vue3-carousel": "^0.1.38",
     "vue3-google-map": "^0.10.0"
+  },
+  "overrides": {
+    "ufo": "^0.8.4"
   }
 }
