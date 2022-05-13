@@ -1,10 +1,19 @@
 export const links = [
     { name: "Inicio", url: "/" },
-    { name: "Nosotros", url: "/Nosotros" },
-    { name: "Vendedores", url: "/Vendedores" },
-    { name: "Compradores", url: "/Compradores" },
-    { name: "Servicios", url: "/Servicios" },
-    { name: "Preguntas Frecuentes", url: "/Preguntas-Frecuentes" },
+    { name: "Nosotros", url: "/nosotros" },
+    { name: "Vendedores", url: "/vendedores" },
+    { name: "Compradores", url: "/compradores" },
+    {
+        name: "Servicios",
+        url: "/servicios",
+        sublink: [
+            { name: "Transferencia", link: '?transferencia' },
+            { name: "Financiamiento", link: '?financiamiento' },
+            { name: "Tag", link: '?tag' },
+            { name: "Seguro Automotriz", link: '?seguro' }
+        ]
+    },
+    { name: "Preguntas Frecuentes", url: "/preguntas-frecuentes" },
 ];
 export const featuresVendedores = [
     {
